@@ -1,21 +1,21 @@
 import org.junit.Test;
 
 public class MainTest {
-    int a = 5;
-    int b = 11;
 
     @Test
     public void MyFirstTest(){
-        int a = this.giveMeInt();
+        int a = this.multiply(5);
+        System.out.println(a);
 
-        if (a > 10){
-            System.out.println("False");
-        } else {
-            System.out.println("True");
-        }
+        int b = this.multiply(10, 15);
+        System.out.println(b);
     }
 
-    public int giveMeInt(){
-        return 5;
+    public int multiply(int number){
+        return number * 2;
+    }
+
+    public int multiply(int number, int multiplier){
+        return number * multiplier;
     }
 }

@@ -17,13 +17,13 @@
       <file leaf-file-name="MainTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MainTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="60">
+              <caret line="4" column="9" lean-forward="true" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
               <folding>
-                <element signature="e#119#120#0" expanded="true" />
-                <element signature="e#152#153#0" expanded="true" />
                 <element signature="e#335#336#0" expanded="true" />
                 <element signature="e#371#372#0" expanded="true" />
+                <element signature="e#415#416#0" expanded="true" />
+                <element signature="e#443#444#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -183,18 +183,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MainTest_MyFirstTest - 2018.10.04 at 23h 36m 35s.xml">
-      <configuration name="MainTest.MyFirstTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainTest_MyFirstTest - 2018.10.05 at 16h 10m 44s.xml">
-      <configuration name="MainTest.MyFirstTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainTest_MyFirstTest - 2018.10.05 at 16h 11m 06s.xml">
-      <configuration name="MainTest.MyFirstTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainTest_MyFirstTest - 2018.10.05 at 16h 11m 37s.xml">
-      <configuration name="MainTest.MyFirstTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="MainTest_MyFirstTest - 2018.10.05 at 16h 11m 50s.xml">
       <configuration name="MainTest.MyFirstTest" configurationId="JUnit" />
     </history-entry>
@@ -211,6 +199,18 @@
       <configuration name="MainTest.MyFirstTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="MainTest_MyFirstTest - 2018.10.05 at 16h 45m 43s.xml">
+      <configuration name="MainTest.MyFirstTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest_MyFirstTest - 2018.10.05 at 17h 21m 01s.xml">
+      <configuration name="MainTest.MyFirstTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest_MyFirstTest - 2018.10.05 at 17h 25m 08s.xml">
+      <configuration name="MainTest.MyFirstTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest_MyFirstTest - 2018.10.05 at 17h 27m 34s.xml">
+      <configuration name="MainTest.MyFirstTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest_MyFirstTest - 2018.10.05 at 23h 08m 32s.xml">
       <configuration name="MainTest.MyFirstTest" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -275,23 +275,23 @@
         <state relative-caret-position="60">
           <caret line="5" column="48" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
           <folding>
-            <element signature="e#119#120#0" expanded="true" />
-            <element signature="e#152#153#0" expanded="true" />
             <element signature="e#335#336#0" expanded="true" />
             <element signature="e#371#372#0" expanded="true" />
+            <element signature="e#415#416#0" expanded="true" />
+            <element signature="e#443#444#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MainTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="60">
+          <caret line="4" column="9" lean-forward="true" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
           <folding>
-            <element signature="e#119#120#0" expanded="true" />
-            <element signature="e#152#153#0" expanded="true" />
             <element signature="e#335#336#0" expanded="true" />
             <element signature="e#371#372#0" expanded="true" />
+            <element signature="e#415#416#0" expanded="true" />
+            <element signature="e#443#444#0" expanded="true" />
           </folding>
         </state>
       </provider>
