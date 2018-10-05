@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6870c719-2ef8-465b-a91d-5ec805c715d9" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/CoreTestCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MathHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaAppium/MainTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaAppium/MainTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MathHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MathHelper.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,8 +18,8 @@
       <file leaf-file-name="MainTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MainTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="75">
+              <caret line="5" column="31" lean-forward="true" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -30,8 +27,8 @@
       <file leaf-file-name="MathHelper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MathHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+            <state relative-caret-position="30">
+              <caret line="2" column="25" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="25" />
               <folding>
                 <element signature="e#525#526#0" expanded="true" />
                 <element signature="e#558#559#0" expanded="true" />
@@ -132,9 +129,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.MainTest">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="MainTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaAppium" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MainTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
     </configuration>
     <configuration name="MainTest.MyFirstTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaAppium" />
@@ -143,6 +157,23 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MainTest" />
       <option name="METHOD_NAME" value="MyFirstTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="MainTest.myFirstTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaAppium" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MainTest" />
+      <option name="METHOD_NAME" value="myFirstTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -191,8 +222,15 @@
       <properties />
       <listeners />
     </configuration>
+    <list>
+      <item itemvalue="JUnit.MainTest.MyFirstTest" />
+      <item itemvalue="JUnit.MainTest.myFirstTest" />
+      <item itemvalue="JUnit.MainTest" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MainTest" />
+        <item itemvalue="JUnit.MainTest.myFirstTest" />
         <item itemvalue="JUnit.MainTest.MyFirstTest" />
       </list>
     </recent_temporary>
@@ -211,18 +249,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MainTest_MyFirstTest - 2018.10.05 at 16h 14m 22s.xml">
-      <configuration name="MainTest.MyFirstTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainTest_MyFirstTest - 2018.10.05 at 16h 19m 38s.xml">
-      <configuration name="MainTest.MyFirstTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainTest_MyFirstTest - 2018.10.05 at 16h 45m 43s.xml">
-      <configuration name="MainTest.MyFirstTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainTest_MyFirstTest - 2018.10.05 at 17h 21m 01s.xml">
-      <configuration name="MainTest.MyFirstTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="MainTest_MyFirstTest - 2018.10.05 at 17h 25m 08s.xml">
       <configuration name="MainTest.MyFirstTest" configurationId="JUnit" />
     </history-entry>
@@ -240,6 +266,18 @@
     </history-entry>
     <history-entry file="MainTest_MyFirstTest - 2018.10.05 at 23h 18m 18s.xml">
       <configuration name="MainTest.MyFirstTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest_MyFirstTest - 2018.10.05 at 23h 39m 42s.xml">
+      <configuration name="MainTest.MyFirstTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest_MyFirstTest - 2018.10.05 at 23h 51m 45s.xml">
+      <configuration name="MainTest.MyFirstTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest_myFirstTest - 2018.10.05 at 23h 51m 53s.xml">
+      <configuration name="MainTest.myFirstTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest - 2018.10.05 at 23h 51m 59s.xml">
+      <configuration name="MainTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -314,8 +352,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MathHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+        <state relative-caret-position="30">
+          <caret line="2" column="25" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="25" />
           <folding>
             <element signature="e#525#526#0" expanded="true" />
             <element signature="e#558#559#0" expanded="true" />
@@ -329,8 +367,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MainTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="75">
+          <caret line="5" column="31" lean-forward="true" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
         </state>
       </provider>
     </entry>
