@@ -1,7 +1,21 @@
 public class MathHelper
 {
+    final public int finalField = 5;
     public int simple_int = 7;
     public static int static_int = 7;
+
+    public void changeSimpleInt()
+    {
+        this.simple_int = 8;
+        static_int = 8;
+    }
+
+    public static void changeSimpleIntByStaticFunction()
+    {
+        // cannot do this
+
+        // this.simple_int = 8;
+    }
 
     public int calc (int a, int b, char action)
     {
