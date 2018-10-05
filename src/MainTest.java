@@ -1,15 +1,17 @@
+import org.junit.Assert;
 import org.junit.Test;
 
 public class MainTest extends CoreTestCase
 {
     @Test
-    public void myFirstTest() {
-
+    public void firstTest()
+    {
+        this.assertFail();
     }
 
-    @Test
-    public void mySecondTest() {
-
+    private void assertFail()
+    {
+        Assert.fail("This message will be printed");
     }
-    
+
 }
