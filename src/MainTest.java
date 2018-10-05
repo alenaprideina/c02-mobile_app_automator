@@ -1,15 +1,30 @@
-import org.junit.Assert;
+import org.junit.After;
+import org.junit.Before;
 import org.junit.Test;
 
 public class MainTest extends CoreTestCase
 {
+    @Before
+    public void textStartTest()
+    {
+        System.out.println("Start test");
+    }
+
+    @After
+    public void testFinishText()
+    {
+        System.out.println("Finish test");
+    }
+
     @Test
     public void firstTest()
     {
-        int expected = 20;
-        int actual = 5 * 5;
-
-        Assert.assertTrue("5 * 5 != 25", actual == expected);
+        System.out.println("First test");
     }
 
+    @Test
+    public void secondTest()
+    {
+        System.out.println("Second test");
+    }
 }
