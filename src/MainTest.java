@@ -6,12 +6,10 @@ public class MainTest {
 
     @Test
     public void MyFirstTest(){
-        int b = 10;
-        int a = 15;
+        this.typeString();
+    }
 
-        System.out.println(a);
-        System.out.println(b);
-        System.out.println(this.a);
-        System.out.println(this.b);
+    public void typeString(){
+        System.out.println("Hello from typeString()");
     }
 }

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6870c719-2ef8-465b-a91d-5ec805c715d9" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,7 +18,13 @@
         <entry file="file://$PROJECT_DIR$/src/MainTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
-              <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+              <folding>
+                <element signature="e#119#120#0" expanded="true" />
+                <element signature="e#152#153#0" expanded="true" />
+                <element signature="e#335#336#0" expanded="true" />
+                <element signature="e#371#372#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -177,9 +183,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MainTest_MyFirstTest - 2018.10.04 at 23h 35m 26s.xml">
-      <configuration name="MainTest.MyFirstTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="MainTest_MyFirstTest - 2018.10.04 at 23h 36m 35s.xml">
       <configuration name="MainTest.MyFirstTest" configurationId="JUnit" />
     </history-entry>
@@ -205,6 +208,9 @@
       <configuration name="MainTest.MyFirstTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="MainTest_MyFirstTest - 2018.10.05 at 16h 19m 38s.xml">
+      <configuration name="MainTest.MyFirstTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest_MyFirstTest - 2018.10.05 at 16h 45m 43s.xml">
       <configuration name="MainTest.MyFirstTest" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -268,13 +274,25 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="5" column="48" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
+          <folding>
+            <element signature="e#119#120#0" expanded="true" />
+            <element signature="e#152#153#0" expanded="true" />
+            <element signature="e#335#336#0" expanded="true" />
+            <element signature="e#371#372#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MainTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#119#120#0" expanded="true" />
+            <element signature="e#152#153#0" expanded="true" />
+            <element signature="e#335#336#0" expanded="true" />
+            <element signature="e#371#372#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
