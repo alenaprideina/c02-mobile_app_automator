@@ -18,8 +18,8 @@
       <file leaf-file-name="MainClass.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MainClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+            <state relative-caret-position="150">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
               <folding>
                 <element signature="e#101#102#0" expanded="true" />
                 <element signature="e#140#141#0" expanded="true" />
@@ -31,12 +31,10 @@
       <file leaf-file-name="MainClassTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MainClassTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+            <state relative-caret-position="165">
+              <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#287#288#0" expanded="true" />
-                <element signature="e#370#371#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -276,18 +274,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MainTest - 2018.10.06 at 00h 59m 46s.xml">
-      <configuration name="MainTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainClassTest_testGetLocalNumber - 2018.10.06 at 01h 03m 19s.xml">
-      <configuration name="MainClassTest.testGetLocalNumber" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainClassTest_testGetLocalNumber - 2018.10.06 at 01h 04m 05s.xml">
-      <configuration name="MainClassTest.testGetLocalNumber" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainClassTest_testGetLocalNumber - 2018.10.06 at 01h 04m 45s.xml">
-      <configuration name="MainClassTest.testGetLocalNumber" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="MainClassTest_testGetLocalNumber - 2018.10.06 at 01h 04m 55s.xml">
       <configuration name="MainClassTest.testGetLocalNumber" configurationId="JUnit" />
     </history-entry>
@@ -304,6 +290,18 @@
       <configuration name="MainClassTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="MainClassTest - 2018.10.06 at 01h 12m 40s.xml">
+      <configuration name="MainClassTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainClassTest - 2018.10.06 at 01h 13m 17s.xml">
+      <configuration name="MainClassTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainClassTest - 2018.10.06 at 01h 24m 03s.xml">
+      <configuration name="MainClassTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainClassTest - 2018.10.06 at 01h 24m 12s.xml">
+      <configuration name="MainClassTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainClassTest - 2018.10.06 at 01h 24m 20s.xml">
       <configuration name="MainClassTest" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -440,20 +438,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MainClassTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        <state relative-caret-position="165">
+          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#287#288#0" expanded="true" />
-            <element signature="e#370#371#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MainClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+        <state relative-caret-position="150">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
           <folding>
             <element signature="e#101#102#0" expanded="true" />
             <element signature="e#140#141#0" expanded="true" />
