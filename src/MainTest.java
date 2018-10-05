@@ -1,21 +1,18 @@
 import org.junit.Test;
 
-public class MainTest {
+public class MainTest extends CoreTestCase
+{
+    MathHelper Math = new MathHelper();
+    int a = 10;
+    int b = 4;
 
     @Test
     public void MyFirstTest(){
-        int a = this.multiply(5);
+        int a = Math.calc(this.a, this.b, '+');
         System.out.println(a);
 
-        int b = this.multiply(10, 15);
+        int b = Math.calc(this.a, this.b, '*');
         System.out.println(b);
     }
 
-    public int multiply(int number){
-        return number * 2;
-    }
-
-    public int multiply(int number, int multiplier){
-        return number * multiplier;
-    }
 }
