@@ -6,10 +6,16 @@ public class MainTest {
 
     @Test
     public void MyFirstTest(){
-        this.typeString();
+        int a = this.giveMeInt();
+
+        if (a > 10){
+            System.out.println("False");
+        } else {
+            System.out.println("True");
+        }
     }
 
-    public void typeString(){
-        System.out.println("Hello from typeString()");
+    public int giveMeInt(){
+        return 5;
     }
 }
