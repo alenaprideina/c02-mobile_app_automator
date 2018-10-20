@@ -39,6 +39,30 @@ public class FirstTest {
     }
 
     @Test
+    public void testPlaceholderInSearchInput()
+    {
+        waitForElementAndClick(
+                By.xpath("//*[contains(@text, 'Search Wikipedia')]"),
+                "Cannot find 'Search Wikipedia' input",
+                5
+        );
+
+        WebElement search_input_element = waitForElementPresent(
+                By.id("org.wikipedia:id/search_src_text"),
+                "Cannot search input",
+                5
+        );
+
+        String search_placeholder = search_input_element.getAttribute("text");
+
+        Assert.assertEquals(
+                "Placeholder is not 'Search…'!",
+                "Search…",
+                search_placeholder
+        );
+    }
+
+    @Test
     public void firstTest()
     {
         waitForElementAndClick(

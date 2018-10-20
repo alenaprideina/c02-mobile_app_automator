@@ -20,8 +20,8 @@
       <file leaf-file-name="FirstTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/FirstTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
-              <caret line="131" column="45" selection-start-line="131" selection-start-column="45" selection-end-line="131" selection-end-column="45" />
+            <state relative-caret-position="1457">
+              <caret line="130" column="10" lean-forward="true" selection-start-line="130" selection-start-column="10" selection-end-line="130" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -105,7 +105,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.FirstTest.testCompareArticleTitle">
+  <component name="RunManager" selected="JUnit.FirstTest">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -177,14 +177,14 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="MainClassTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FirstTest.testPlaceholderInSearchInput" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaAppium" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MainClassTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="FirstTest" />
+      <option name="METHOD_NAME" value="testPlaceholderInSearchInput" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -233,19 +233,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="JUnit.MainClassTest" />
       <item itemvalue="JUnit.FirstTest" />
       <item itemvalue="JUnit.FirstTest.testCancelSearch" />
       <item itemvalue="JUnit.FirstTest.firstTest" />
       <item itemvalue="JUnit.FirstTest.testCompareArticleTitle" />
+      <item itemvalue="JUnit.FirstTest.testPlaceholderInSearchInput" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FirstTest" />
+        <item itemvalue="JUnit.FirstTest.testPlaceholderInSearchInput" />
         <item itemvalue="JUnit.FirstTest.testCompareArticleTitle" />
         <item itemvalue="JUnit.FirstTest.testCancelSearch" />
-        <item itemvalue="JUnit.FirstTest" />
         <item itemvalue="JUnit.FirstTest.firstTest" />
-        <item itemvalue="JUnit.MainClassTest" />
       </list>
     </recent_temporary>
   </component>
@@ -263,24 +263,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FirstTest_testCancelSearch - 2018.10.20 at 22h 19m 29s.xml">
-      <configuration name="FirstTest.testCancelSearch" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FirstTest_testCancelSearch - 2018.10.20 at 22h 20m 08s.xml">
-      <configuration name="FirstTest.testCancelSearch" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FirstTest - 2018.10.20 at 22h 20m 49s.xml">
-      <configuration name="FirstTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FirstTest - 2018.10.20 at 22h 38m 30s.xml">
-      <configuration name="FirstTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FirstTest_firstTest - 2018.10.20 at 22h 39m 46s.xml">
-      <configuration name="FirstTest.firstTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FirstTest_firstTest - 2018.10.20 at 22h 41m 19s.xml">
-      <configuration name="FirstTest.firstTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="FirstTest_firstTest - 2018.10.20 at 22h 42m 20s.xml">
       <configuration name="FirstTest.firstTest" configurationId="JUnit" />
     </history-entry>
@@ -292,6 +274,24 @@
     </history-entry>
     <history-entry file="FirstTest_testCompareArticleTitle - 2018.10.20 at 23h 31m 18s.xml">
       <configuration name="FirstTest.testCompareArticleTitle" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FirstTest_testCompareArticleTitle - 2018.10.20 at 23h 37m 34s.xml">
+      <configuration name="FirstTest.testCompareArticleTitle" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FirstTest_testPlaceholderInSearchInput - 2018.10.20 at 23h 44m 36s.xml">
+      <configuration name="FirstTest.testPlaceholderInSearchInput" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FirstTest_testPlaceholderInSearchInput - 2018.10.20 at 23h 45m 31s.xml">
+      <configuration name="FirstTest.testPlaceholderInSearchInput" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FirstTest_testPlaceholderInSearchInput - 2018.10.20 at 23h 45m 50s.xml">
+      <configuration name="FirstTest.testPlaceholderInSearchInput" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FirstTest - 2018.10.21 at 00h 05m 01s.xml">
+      <configuration name="FirstTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FirstTest - 2018.10.21 at 00h 39m 24s.xml">
+      <configuration name="FirstTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -378,8 +378,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FirstTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="131" column="45" selection-start-line="131" selection-start-column="45" selection-end-line="131" selection-end-column="45" />
+        <state relative-caret-position="1457">
+          <caret line="130" column="10" lean-forward="true" selection-start-line="130" selection-start-column="10" selection-end-line="130" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
