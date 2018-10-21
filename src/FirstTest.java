@@ -11,6 +11,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.net.URL;
+import java.util.List;
 
 public class FirstTest {
 
@@ -89,6 +90,39 @@ public class FirstTest {
 
         } else {
             this.assertFail("Wikipedia found less than 2 articles by 'Junit'");
+        }
+    }
+
+    @Test
+    public void testSearchResultMatch()
+    {
+        String request = "Java";
+        String title_element;
+
+        waitForElementAndClick(
+                By.xpath("//*[contains(@text, 'Search Wikipedia')]"),
+                "Cannot find 'Search Wikipedia' input",
+                5
+        );
+
+        waitForElementAndSendKeys(
+                By.xpath("//*[contains(@text, 'Search…')]"),
+                request,
+                "Cannot find search '" + request + "'",
+                5
+        );
+
+        waitForElementPresent(By.id("org.wikipedia:id/page_list_item_container"), "There is no results by '" + request + "", 5);
+        List<WebElement> page_list_item_container = driver.findElementsByXPath("//*[@resource-id='org.wikipedia:id/page_list_item_container']");
+
+        for (WebElement el: page_list_item_container) {
+            title_element = el.findElement(By.id("org.wikipedia:id/page_list_item_title")).getAttribute("text");
+
+            if (title_element.toLowerCase().contains(request.toLowerCase())) {
+                continue;
+            } else {
+                this.assertFail("Article without '" + request + "'" + " in title was found in search results.");
+            }
         }
     }
 
