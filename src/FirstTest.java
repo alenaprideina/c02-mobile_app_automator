@@ -66,6 +66,8 @@ public class FirstTest {
     @Test
     public void testSearchResult()
     {
+        String request = "Junit";
+
         waitForElementAndClick(
                 By.xpath("//*[contains(@text, 'Search Wikipedia')]"),
                 "Cannot find 'Search Wikipedia' input",
@@ -74,23 +76,27 @@ public class FirstTest {
 
         waitForElementAndSendKeys(
                 By.xpath("//*[contains(@text, 'Search…')]"),
-                "Junit",
+                request,
                 "Cannot find search input",
                 5
         );
 
-        if (driver.findElements(By.id("org.wikipedia:id/page_list_item_container")).size() > 1) {
-            waitForElementAndClick(
-                    By.id("org.wikipedia:id/search_close_btn"),
-                    "Cannot find X to cancel search",
-                    5
-            );
+        waitForElementPresent(
+                By.id("org.wikipedia:id/page_list_item_container"),
+                "There is no results by '" + request + "",
+                5);
 
-            Assert.assertTrue("Search not canceled", (driver.findElements(By.id("org.wikipedia:id/page_list_item_container")).size() == 0));
+        Assert.assertTrue(
+                "Wikipedia found less than 2 articles by 'Junit'",
+                driver.findElements(By.id("org.wikipedia:id/page_list_item_container")).size() > 1
+        );
 
-        } else {
-            this.assertFail("Wikipedia found less than 2 articles by 'Junit'");
-        }
+        waitForElementAndClick(
+                By.id("org.wikipedia:id/search_close_btn"),
+                "Cannot find X to cancel search",
+                5);
+
+        Assert.assertTrue("Search not canceled", (driver.findElements(By.id("org.wikipedia:id/page_list_item_container")).size() == 0));
     }
 
     @Test

@@ -21,13 +21,12 @@
       <file leaf-file-name="FirstTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/FirstTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="70">
-              <caret line="98" column="32" lean-forward="true" selection-start-line="98" selection-start-column="32" selection-end-line="98" selection-end-column="32" />
+            <state relative-caret-position="21">
+              <caret line="68" column="31" selection-start-line="68" selection-start-column="31" selection-end-line="68" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#setUp#0;class#FirstTest#0" />
                 <element signature="method#testPlaceholderInSearchInput#0;class#FirstTest#0" />
-                <element signature="method#testSearchResult#0;class#FirstTest#0" />
               </folding>
             </state>
           </provider>
@@ -70,7 +69,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -86,6 +84,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
       <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
@@ -109,7 +108,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.FirstTest">
+  <component name="RunManager" selected="JUnit.FirstTest.testSearchResult">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -245,9 +244,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FirstTest.testSearchResult" />
         <item itemvalue="JUnit.FirstTest" />
         <item itemvalue="JUnit.FirstTest.testSearchResultMatch" />
-        <item itemvalue="JUnit.FirstTest.testSearchResult" />
         <item itemvalue="JUnit.FirstTest.testPlaceholderInSearchInput" />
         <item itemvalue="JUnit.FirstTest.testCompareArticleTitle" />
       </list>
@@ -267,18 +266,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FirstTest_testSearchResultMatch - 2018.10.21 at 14h 31m 00s.xml">
-      <configuration name="FirstTest.testSearchResultMatch" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FirstTest_testSearchResultMatch - 2018.10.21 at 14h 31m 59s.xml">
-      <configuration name="FirstTest.testSearchResultMatch" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FirstTest_testSearchResultMatch - 2018.10.21 at 14h 40m 12s.xml">
-      <configuration name="FirstTest.testSearchResultMatch" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FirstTest_testSearchResultMatch - 2018.10.21 at 14h 44m 26s.xml">
-      <configuration name="FirstTest.testSearchResultMatch" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="FirstTest_testSearchResultMatch - 2018.10.21 at 14h 57m 48s.xml">
       <configuration name="FirstTest.testSearchResultMatch" configurationId="JUnit" />
     </history-entry>
@@ -297,6 +284,18 @@
     <history-entry file="FirstTest_testSearchResultMatch - 2018.10.21 at 15h 21m 49s.xml">
       <configuration name="FirstTest.testSearchResultMatch" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="FirstTest - 2018.10.21 at 15h 23m 58s.xml">
+      <configuration name="FirstTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FirstTest - 2018.10.22 at 08h 59m 23s.xml">
+      <configuration name="FirstTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FirstTest_testSearchResult - 2018.10.22 at 09h 00m 14s.xml">
+      <configuration name="FirstTest.testSearchResult" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FirstTest_testSearchResult - 2018.10.22 at 09h 00m 44s.xml">
+      <configuration name="FirstTest.testSearchResult" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="804" extended-state="0" />
@@ -310,18 +309,18 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24611032" />
       <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.28005657" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13018598" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13161659" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Coverage" order="4" side_tool="true" weight="0.3297568" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -336,10 +335,22 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/FirstTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1470">
+          <caret line="98" column="32" lean-forward="true" selection-start-line="98" selection-start-column="32" selection-end-line="98" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#setUp#0;class#FirstTest#0" />
+            <element signature="method#testPlaceholderInSearchInput#0;class#FirstTest#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/FirstTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1695">
@@ -348,7 +359,6 @@
             <element signature="imports" expanded="true" />
             <element signature="method#setUp#0;class#FirstTest#0" />
             <element signature="method#testPlaceholderInSearchInput#0;class#FirstTest#0" />
-            <element signature="method#testSearchResult#0;class#FirstTest#0" />
           </folding>
         </state>
       </provider>
@@ -361,7 +371,6 @@
             <element signature="imports" expanded="true" />
             <element signature="method#setUp#0;class#FirstTest#0" />
             <element signature="method#testPlaceholderInSearchInput#0;class#FirstTest#0" />
-            <element signature="method#testSearchResult#0;class#FirstTest#0" />
           </folding>
         </state>
       </provider>
@@ -374,7 +383,6 @@
             <element signature="imports" expanded="true" />
             <element signature="method#setUp#0;class#FirstTest#0" />
             <element signature="method#testPlaceholderInSearchInput#0;class#FirstTest#0" />
-            <element signature="method#testSearchResult#0;class#FirstTest#0" />
           </folding>
         </state>
       </provider>
@@ -401,13 +409,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FirstTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="98" column="32" lean-forward="true" selection-start-line="98" selection-start-column="32" selection-end-line="98" selection-end-column="32" />
+        <state relative-caret-position="21">
+          <caret line="68" column="31" selection-start-line="68" selection-start-column="31" selection-end-line="68" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#setUp#0;class#FirstTest#0" />
             <element signature="method#testPlaceholderInSearchInput#0;class#FirstTest#0" />
-            <element signature="method#testSearchResult#0;class#FirstTest#0" />
           </folding>
         </state>
       </provider>
