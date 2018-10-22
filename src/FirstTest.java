@@ -66,7 +66,7 @@ public class FirstTest {
     @Test
     public void testSearchResult()
     {
-        String request = "Junit";
+        String request = "Java";
 
         waitForElementAndClick(
                 By.xpath("//*[contains(@text, 'Search Wikipedia')]"),
