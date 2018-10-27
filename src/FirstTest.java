@@ -34,6 +34,8 @@ public class FirstTest {
         capabilities.setCapability("app", "/Users/alena.prideina/Documents/my-projects/JavaAppium/apks/org.wikipedia.apk");
 
         driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+
+        driver.rotate(ScreenOrientation.PORTRAIT);
     }
 
     @After
@@ -41,7 +43,7 @@ public class FirstTest {
     {
         driver.quit();
     }
-
+    
     @Test
     public void testPlaceholderInSearchInput()
     {
@@ -585,7 +587,7 @@ public class FirstTest {
         waitForElementAndClick(
                 By.xpath("//*[@text='Add to reading list']"),
                 "Cannot find option to add article to reading list",
-                15
+                20
         );
 
         waitForElementAndClick(
