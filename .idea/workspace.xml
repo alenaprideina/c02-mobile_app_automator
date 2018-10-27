@@ -20,25 +20,29 @@
       <file leaf-file-name="FirstTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/FirstTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="512" selection-start-line="512" selection-end-line="512" />
+            <state relative-caret-position="3155">
+              <caret line="403" column="10" selection-start-line="403" selection-start-column="10" selection-end-line="403" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#setUp#0;class#FirstTest#0" />
                 <element signature="method#testPlaceholderInSearchInput#0;class#FirstTest#0" />
-                <element signature="method#testAmountOfNotEmptySearch#0;class#FirstTest#0" />
+                <element signature="method#firstTest#0;class#FirstTest#0" />
+                <element signature="method#testCancelSearch#0;class#FirstTest#0" />
+                <element signature="method#testCompareArticleTitle#0;class#FirstTest#0" />
+                <element signature="method#testSwipeArticle#0;class#FirstTest#0" />
                 <element signature="method#testAmountOfEmptySearch#0;class#FirstTest#0" />
                 <element signature="method#testChangeScreenOrientationOnSearchResults#0;class#FirstTest#0" />
+                <element signature="method#testCheckSearchArticleInBackground#0;class#FirstTest#0" />
                 <element signature="method#waitForElementPresent#0;class#FirstTest#0" />
                 <element signature="method#waitForElementPresent#1;class#FirstTest#0" />
-                <element signature="method#waitForElementAndClick#0;class#FirstTest#0" />
-                <element signature="method#waitForElementAndSendKeys#0;class#FirstTest#0" />
                 <element signature="method#waitForElementNotPresent#0;class#FirstTest#0" />
                 <element signature="method#waitForElementAndClear#0;class#FirstTest#0" />
-                <element signature="e#13739#13740#0" expanded="true" />
-                <element signature="e#13788#13789#0" expanded="true" />
+                <element signature="e#19810#19811#0" expanded="true" />
+                <element signature="e#19859#19860#0" expanded="true" />
                 <element signature="method#swipeUp#0;class#FirstTest#0" />
-                <element signature="method#swipeElementToLeft#0;class#FirstTest#0" />
+                <element signature="e#20383#20384#0" expanded="true" />
+                <element signature="e#20411#20412#0" expanded="true" />
+                <element signature="method#swipeUpToFindElement#0;class#FirstTest#0" />
               </folding>
             </state>
           </provider>
@@ -58,6 +62,7 @@
       <find>Cannot find button to open article options</find>
       <find>Cannot delete saved article</find>
       <find>assertElementNotPresent</find>
+      <find>getAmountOfElements</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -126,7 +131,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.FirstTest">
+  <component name="RunManager" selected="JUnit.FirstTest.testPlaceholderInSearchInput">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -147,47 +152,13 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="FirstTest.saveFirstArticleToMyList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FirstTest.testAmountOfNotEmptySearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaAppium" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="FirstTest" />
-      <option name="METHOD_NAME" value="saveFirstArticleToMyList" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="FirstTest.testAmountOfEmptySearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaAppium" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FirstTest" />
-      <option name="METHOD_NAME" value="testAmountOfEmptySearch" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="FirstTest.testChangeScreenOrientationOnSearchResults" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaAppium" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FirstTest" />
-      <option name="METHOD_NAME" value="testChangeScreenOrientationOnSearchResults" />
+      <option name="METHOD_NAME" value="testAmountOfNotEmptySearch" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -205,6 +176,40 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="FirstTest" />
       <option name="METHOD_NAME" value="testCheckSearchArticleInBackground" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="FirstTest.testPlaceholderInSearchInput" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaAppium" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FirstTest" />
+      <option name="METHOD_NAME" value="testPlaceholderInSearchInput" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="FirstTest.testSaveTwoArticlesAndDeleteOneOfThem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaAppium" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FirstTest" />
+      <option name="METHOD_NAME" value="testSaveTwoArticlesAndDeleteOneOfThem" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -255,18 +260,18 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.FirstTest" />
-      <item itemvalue="JUnit.FirstTest.saveFirstArticleToMyList" />
-      <item itemvalue="JUnit.FirstTest.testAmountOfEmptySearch" />
-      <item itemvalue="JUnit.FirstTest.testChangeScreenOrientationOnSearchResults" />
       <item itemvalue="JUnit.FirstTest.testCheckSearchArticleInBackground" />
+      <item itemvalue="JUnit.FirstTest.testSaveTwoArticlesAndDeleteOneOfThem" />
+      <item itemvalue="JUnit.FirstTest.testAmountOfNotEmptySearch" />
+      <item itemvalue="JUnit.FirstTest.testPlaceholderInSearchInput" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FirstTest.testPlaceholderInSearchInput" />
         <item itemvalue="JUnit.FirstTest" />
+        <item itemvalue="JUnit.FirstTest.testAmountOfNotEmptySearch" />
+        <item itemvalue="JUnit.FirstTest.testSaveTwoArticlesAndDeleteOneOfThem" />
         <item itemvalue="JUnit.FirstTest.testCheckSearchArticleInBackground" />
-        <item itemvalue="JUnit.FirstTest.testChangeScreenOrientationOnSearchResults" />
-        <item itemvalue="JUnit.FirstTest.testAmountOfEmptySearch" />
-        <item itemvalue="JUnit.FirstTest.saveFirstArticleToMyList" />
       </list>
     </recent_temporary>
   </component>
@@ -284,35 +289,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FirstTest_testAmountOfEmptySearch - 2018.10.27 at 20h 22m 09s.xml">
-      <configuration name="FirstTest.testAmountOfEmptySearch" configurationId="JUnit" />
+    <history-entry file="FirstTest_testSaveTwoArticlesAndDeleteOneOfThem - 2018.10.27 at 23h 44m 09s.xml">
+      <configuration name="FirstTest.testSaveTwoArticlesAndDeleteOneOfThem" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest_testAmountOfEmptySearch - 2018.10.27 at 20h 24m 57s.xml">
-      <configuration name="FirstTest.testAmountOfEmptySearch" configurationId="JUnit" />
+    <history-entry file="FirstTest_testSaveTwoArticlesAndDeleteOneOfThem - 2018.10.27 at 23h 45m 43s.xml">
+      <configuration name="FirstTest.testSaveTwoArticlesAndDeleteOneOfThem" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest_testAmountOfEmptySearch - 2018.10.27 at 20h 31m 26s.xml">
-      <configuration name="FirstTest.testAmountOfEmptySearch" configurationId="JUnit" />
+    <history-entry file="FirstTest_testSaveTwoArticlesAndDeleteOneOfThem - 2018.10.27 at 23h 48m 52s.xml">
+      <configuration name="FirstTest.testSaveTwoArticlesAndDeleteOneOfThem" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest_testAmountOfEmptySearch - 2018.10.27 at 20h 31m 48s.xml">
-      <configuration name="FirstTest.testAmountOfEmptySearch" configurationId="JUnit" />
+    <history-entry file="FirstTest_testSaveTwoArticlesAndDeleteOneOfThem - 2018.10.27 at 23h 51m 18s.xml">
+      <configuration name="FirstTest.testSaveTwoArticlesAndDeleteOneOfThem" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest_testAmountOfEmptySearch - 2018.10.27 at 20h 33m 31s.xml">
-      <configuration name="FirstTest.testAmountOfEmptySearch" configurationId="JUnit" />
+    <history-entry file="FirstTest_testSaveTwoArticlesAndDeleteOneOfThem - 2018.10.27 at 23h 53m 08s.xml">
+      <configuration name="FirstTest.testSaveTwoArticlesAndDeleteOneOfThem" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest_testChangeScreenOrientationOnSearchResults - 2018.10.27 at 21h 17m 12s.xml">
-      <configuration name="FirstTest.testChangeScreenOrientationOnSearchResults" configurationId="JUnit" />
+    <history-entry file="FirstTest_testSaveTwoArticlesAndDeleteOneOfThem - 2018.10.27 at 23h 59m 03s.xml">
+      <configuration name="FirstTest.testSaveTwoArticlesAndDeleteOneOfThem" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest_testChangeScreenOrientationOnSearchResults - 2018.10.27 at 21h 19m 45s.xml">
-      <configuration name="FirstTest.testChangeScreenOrientationOnSearchResults" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FirstTest_testChangeScreenOrientationOnSearchResults - 2018.10.27 at 21h 27m 05s.xml">
-      <configuration name="FirstTest.testChangeScreenOrientationOnSearchResults" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FirstTest_testCheckSearchArticleInBackground - 2018.10.27 at 21h 40m 41s.xml">
-      <configuration name="FirstTest.testCheckSearchArticleInBackground" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FirstTest - 2018.10.27 at 22h 16m 27s.xml">
+    <history-entry file="FirstTest - 2018.10.28 at 00h 05m 47s.xml">
       <configuration name="FirstTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FirstTest_testAmountOfNotEmptySearch - 2018.10.28 at 00h 07m 00s.xml">
+      <configuration name="FirstTest.testAmountOfNotEmptySearch" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FirstTest_testAmountOfNotEmptySearch - 2018.10.28 at 00h 07m 47s.xml">
+      <configuration name="FirstTest.testAmountOfNotEmptySearch" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FirstTest_testAmountOfNotEmptySearch - 2018.10.28 at 00h 09m 16s.xml">
+      <configuration name="FirstTest.testAmountOfNotEmptySearch" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -327,7 +332,7 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.41939393" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.28363636" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
@@ -353,7 +358,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="6" />
+      <option name="time" value="8" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -365,19 +370,23 @@
             <element signature="imports" expanded="true" />
             <element signature="method#setUp#0;class#FirstTest#0" />
             <element signature="method#testPlaceholderInSearchInput#0;class#FirstTest#0" />
-            <element signature="method#testAmountOfNotEmptySearch#0;class#FirstTest#0" />
+            <element signature="method#firstTest#0;class#FirstTest#0" />
+            <element signature="method#testCancelSearch#0;class#FirstTest#0" />
+            <element signature="method#testCompareArticleTitle#0;class#FirstTest#0" />
+            <element signature="method#testSwipeArticle#0;class#FirstTest#0" />
             <element signature="method#testAmountOfEmptySearch#0;class#FirstTest#0" />
             <element signature="method#testChangeScreenOrientationOnSearchResults#0;class#FirstTest#0" />
+            <element signature="method#testCheckSearchArticleInBackground#0;class#FirstTest#0" />
             <element signature="method#waitForElementPresent#0;class#FirstTest#0" />
             <element signature="method#waitForElementPresent#1;class#FirstTest#0" />
-            <element signature="method#waitForElementAndClick#0;class#FirstTest#0" />
-            <element signature="method#waitForElementAndSendKeys#0;class#FirstTest#0" />
             <element signature="method#waitForElementNotPresent#0;class#FirstTest#0" />
             <element signature="method#waitForElementAndClear#0;class#FirstTest#0" />
-            <element signature="e#13739#13740#0" expanded="true" />
-            <element signature="e#13788#13789#0" expanded="true" />
+            <element signature="e#19810#19811#0" expanded="true" />
+            <element signature="e#19859#19860#0" expanded="true" />
             <element signature="method#swipeUp#0;class#FirstTest#0" />
-            <element signature="method#swipeElementToLeft#0;class#FirstTest#0" />
+            <element signature="e#20383#20384#0" expanded="true" />
+            <element signature="e#20411#20412#0" expanded="true" />
+            <element signature="method#swipeUpToFindElement#0;class#FirstTest#0" />
           </folding>
         </state>
       </provider>
@@ -390,19 +399,23 @@
             <element signature="imports" expanded="true" />
             <element signature="method#setUp#0;class#FirstTest#0" />
             <element signature="method#testPlaceholderInSearchInput#0;class#FirstTest#0" />
-            <element signature="method#testAmountOfNotEmptySearch#0;class#FirstTest#0" />
+            <element signature="method#firstTest#0;class#FirstTest#0" />
+            <element signature="method#testCancelSearch#0;class#FirstTest#0" />
+            <element signature="method#testCompareArticleTitle#0;class#FirstTest#0" />
+            <element signature="method#testSwipeArticle#0;class#FirstTest#0" />
             <element signature="method#testAmountOfEmptySearch#0;class#FirstTest#0" />
             <element signature="method#testChangeScreenOrientationOnSearchResults#0;class#FirstTest#0" />
+            <element signature="method#testCheckSearchArticleInBackground#0;class#FirstTest#0" />
             <element signature="method#waitForElementPresent#0;class#FirstTest#0" />
             <element signature="method#waitForElementPresent#1;class#FirstTest#0" />
-            <element signature="method#waitForElementAndClick#0;class#FirstTest#0" />
-            <element signature="method#waitForElementAndSendKeys#0;class#FirstTest#0" />
             <element signature="method#waitForElementNotPresent#0;class#FirstTest#0" />
             <element signature="method#waitForElementAndClear#0;class#FirstTest#0" />
-            <element signature="e#13739#13740#0" expanded="true" />
-            <element signature="e#13788#13789#0" expanded="true" />
+            <element signature="e#19810#19811#0" expanded="true" />
+            <element signature="e#19859#19860#0" expanded="true" />
             <element signature="method#swipeUp#0;class#FirstTest#0" />
-            <element signature="method#swipeElementToLeft#0;class#FirstTest#0" />
+            <element signature="e#20383#20384#0" expanded="true" />
+            <element signature="e#20411#20412#0" expanded="true" />
+            <element signature="method#swipeUpToFindElement#0;class#FirstTest#0" />
           </folding>
         </state>
       </provider>
@@ -415,19 +428,23 @@
             <element signature="imports" expanded="true" />
             <element signature="method#setUp#0;class#FirstTest#0" />
             <element signature="method#testPlaceholderInSearchInput#0;class#FirstTest#0" />
-            <element signature="method#testAmountOfNotEmptySearch#0;class#FirstTest#0" />
+            <element signature="method#firstTest#0;class#FirstTest#0" />
+            <element signature="method#testCancelSearch#0;class#FirstTest#0" />
+            <element signature="method#testCompareArticleTitle#0;class#FirstTest#0" />
+            <element signature="method#testSwipeArticle#0;class#FirstTest#0" />
             <element signature="method#testAmountOfEmptySearch#0;class#FirstTest#0" />
             <element signature="method#testChangeScreenOrientationOnSearchResults#0;class#FirstTest#0" />
+            <element signature="method#testCheckSearchArticleInBackground#0;class#FirstTest#0" />
             <element signature="method#waitForElementPresent#0;class#FirstTest#0" />
             <element signature="method#waitForElementPresent#1;class#FirstTest#0" />
-            <element signature="method#waitForElementAndClick#0;class#FirstTest#0" />
-            <element signature="method#waitForElementAndSendKeys#0;class#FirstTest#0" />
             <element signature="method#waitForElementNotPresent#0;class#FirstTest#0" />
             <element signature="method#waitForElementAndClear#0;class#FirstTest#0" />
-            <element signature="e#13739#13740#0" expanded="true" />
-            <element signature="e#13788#13789#0" expanded="true" />
+            <element signature="e#19810#19811#0" expanded="true" />
+            <element signature="e#19859#19860#0" expanded="true" />
             <element signature="method#swipeUp#0;class#FirstTest#0" />
-            <element signature="method#swipeElementToLeft#0;class#FirstTest#0" />
+            <element signature="e#20383#20384#0" expanded="true" />
+            <element signature="e#20411#20412#0" expanded="true" />
+            <element signature="method#swipeUpToFindElement#0;class#FirstTest#0" />
           </folding>
         </state>
       </provider>
@@ -440,19 +457,23 @@
             <element signature="imports" expanded="true" />
             <element signature="method#setUp#0;class#FirstTest#0" />
             <element signature="method#testPlaceholderInSearchInput#0;class#FirstTest#0" />
-            <element signature="method#testAmountOfNotEmptySearch#0;class#FirstTest#0" />
+            <element signature="method#firstTest#0;class#FirstTest#0" />
+            <element signature="method#testCancelSearch#0;class#FirstTest#0" />
+            <element signature="method#testCompareArticleTitle#0;class#FirstTest#0" />
+            <element signature="method#testSwipeArticle#0;class#FirstTest#0" />
             <element signature="method#testAmountOfEmptySearch#0;class#FirstTest#0" />
             <element signature="method#testChangeScreenOrientationOnSearchResults#0;class#FirstTest#0" />
+            <element signature="method#testCheckSearchArticleInBackground#0;class#FirstTest#0" />
             <element signature="method#waitForElementPresent#0;class#FirstTest#0" />
             <element signature="method#waitForElementPresent#1;class#FirstTest#0" />
-            <element signature="method#waitForElementAndClick#0;class#FirstTest#0" />
-            <element signature="method#waitForElementAndSendKeys#0;class#FirstTest#0" />
             <element signature="method#waitForElementNotPresent#0;class#FirstTest#0" />
             <element signature="method#waitForElementAndClear#0;class#FirstTest#0" />
-            <element signature="e#13739#13740#0" expanded="true" />
-            <element signature="e#13788#13789#0" expanded="true" />
+            <element signature="e#19810#19811#0" expanded="true" />
+            <element signature="e#19859#19860#0" expanded="true" />
             <element signature="method#swipeUp#0;class#FirstTest#0" />
-            <element signature="method#swipeElementToLeft#0;class#FirstTest#0" />
+            <element signature="e#20383#20384#0" expanded="true" />
+            <element signature="e#20411#20412#0" expanded="true" />
+            <element signature="method#swipeUpToFindElement#0;class#FirstTest#0" />
           </folding>
         </state>
       </provider>
@@ -465,19 +486,23 @@
             <element signature="imports" expanded="true" />
             <element signature="method#setUp#0;class#FirstTest#0" />
             <element signature="method#testPlaceholderInSearchInput#0;class#FirstTest#0" />
-            <element signature="method#testAmountOfNotEmptySearch#0;class#FirstTest#0" />
+            <element signature="method#firstTest#0;class#FirstTest#0" />
+            <element signature="method#testCancelSearch#0;class#FirstTest#0" />
+            <element signature="method#testCompareArticleTitle#0;class#FirstTest#0" />
+            <element signature="method#testSwipeArticle#0;class#FirstTest#0" />
             <element signature="method#testAmountOfEmptySearch#0;class#FirstTest#0" />
             <element signature="method#testChangeScreenOrientationOnSearchResults#0;class#FirstTest#0" />
+            <element signature="method#testCheckSearchArticleInBackground#0;class#FirstTest#0" />
             <element signature="method#waitForElementPresent#0;class#FirstTest#0" />
             <element signature="method#waitForElementPresent#1;class#FirstTest#0" />
-            <element signature="method#waitForElementAndClick#0;class#FirstTest#0" />
-            <element signature="method#waitForElementAndSendKeys#0;class#FirstTest#0" />
             <element signature="method#waitForElementNotPresent#0;class#FirstTest#0" />
             <element signature="method#waitForElementAndClear#0;class#FirstTest#0" />
-            <element signature="e#13739#13740#0" expanded="true" />
-            <element signature="e#13788#13789#0" expanded="true" />
+            <element signature="e#19810#19811#0" expanded="true" />
+            <element signature="e#19859#19860#0" expanded="true" />
             <element signature="method#swipeUp#0;class#FirstTest#0" />
-            <element signature="method#swipeElementToLeft#0;class#FirstTest#0" />
+            <element signature="e#20383#20384#0" expanded="true" />
+            <element signature="e#20411#20412#0" expanded="true" />
+            <element signature="method#swipeUpToFindElement#0;class#FirstTest#0" />
           </folding>
         </state>
       </provider>
@@ -490,19 +515,23 @@
             <element signature="imports" expanded="true" />
             <element signature="method#setUp#0;class#FirstTest#0" />
             <element signature="method#testPlaceholderInSearchInput#0;class#FirstTest#0" />
-            <element signature="method#testAmountOfNotEmptySearch#0;class#FirstTest#0" />
+            <element signature="method#firstTest#0;class#FirstTest#0" />
+            <element signature="method#testCancelSearch#0;class#FirstTest#0" />
+            <element signature="method#testCompareArticleTitle#0;class#FirstTest#0" />
+            <element signature="method#testSwipeArticle#0;class#FirstTest#0" />
             <element signature="method#testAmountOfEmptySearch#0;class#FirstTest#0" />
             <element signature="method#testChangeScreenOrientationOnSearchResults#0;class#FirstTest#0" />
+            <element signature="method#testCheckSearchArticleInBackground#0;class#FirstTest#0" />
             <element signature="method#waitForElementPresent#0;class#FirstTest#0" />
             <element signature="method#waitForElementPresent#1;class#FirstTest#0" />
-            <element signature="method#waitForElementAndClick#0;class#FirstTest#0" />
-            <element signature="method#waitForElementAndSendKeys#0;class#FirstTest#0" />
             <element signature="method#waitForElementNotPresent#0;class#FirstTest#0" />
             <element signature="method#waitForElementAndClear#0;class#FirstTest#0" />
-            <element signature="e#13739#13740#0" expanded="true" />
-            <element signature="e#13788#13789#0" expanded="true" />
+            <element signature="e#19810#19811#0" expanded="true" />
+            <element signature="e#19859#19860#0" expanded="true" />
             <element signature="method#swipeUp#0;class#FirstTest#0" />
-            <element signature="method#swipeElementToLeft#0;class#FirstTest#0" />
+            <element signature="e#20383#20384#0" expanded="true" />
+            <element signature="e#20411#20412#0" expanded="true" />
+            <element signature="method#swipeUpToFindElement#0;class#FirstTest#0" />
           </folding>
         </state>
       </provider>
@@ -515,19 +544,23 @@
             <element signature="imports" expanded="true" />
             <element signature="method#setUp#0;class#FirstTest#0" />
             <element signature="method#testPlaceholderInSearchInput#0;class#FirstTest#0" />
-            <element signature="method#testAmountOfNotEmptySearch#0;class#FirstTest#0" />
+            <element signature="method#firstTest#0;class#FirstTest#0" />
+            <element signature="method#testCancelSearch#0;class#FirstTest#0" />
+            <element signature="method#testCompareArticleTitle#0;class#FirstTest#0" />
+            <element signature="method#testSwipeArticle#0;class#FirstTest#0" />
             <element signature="method#testAmountOfEmptySearch#0;class#FirstTest#0" />
             <element signature="method#testChangeScreenOrientationOnSearchResults#0;class#FirstTest#0" />
+            <element signature="method#testCheckSearchArticleInBackground#0;class#FirstTest#0" />
             <element signature="method#waitForElementPresent#0;class#FirstTest#0" />
             <element signature="method#waitForElementPresent#1;class#FirstTest#0" />
-            <element signature="method#waitForElementAndClick#0;class#FirstTest#0" />
-            <element signature="method#waitForElementAndSendKeys#0;class#FirstTest#0" />
             <element signature="method#waitForElementNotPresent#0;class#FirstTest#0" />
             <element signature="method#waitForElementAndClear#0;class#FirstTest#0" />
-            <element signature="e#13739#13740#0" expanded="true" />
-            <element signature="e#13788#13789#0" expanded="true" />
+            <element signature="e#19810#19811#0" expanded="true" />
+            <element signature="e#19859#19860#0" expanded="true" />
             <element signature="method#swipeUp#0;class#FirstTest#0" />
-            <element signature="method#swipeElementToLeft#0;class#FirstTest#0" />
+            <element signature="e#20383#20384#0" expanded="true" />
+            <element signature="e#20411#20412#0" expanded="true" />
+            <element signature="method#swipeUpToFindElement#0;class#FirstTest#0" />
           </folding>
         </state>
       </provider>
@@ -554,25 +587,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FirstTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="512" selection-start-line="512" selection-end-line="512" />
+        <state relative-caret-position="3155">
+          <caret line="403" column="10" selection-start-line="403" selection-start-column="10" selection-end-line="403" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#setUp#0;class#FirstTest#0" />
             <element signature="method#testPlaceholderInSearchInput#0;class#FirstTest#0" />
-            <element signature="method#testAmountOfNotEmptySearch#0;class#FirstTest#0" />
+            <element signature="method#firstTest#0;class#FirstTest#0" />
+            <element signature="method#testCancelSearch#0;class#FirstTest#0" />
+            <element signature="method#testCompareArticleTitle#0;class#FirstTest#0" />
+            <element signature="method#testSwipeArticle#0;class#FirstTest#0" />
             <element signature="method#testAmountOfEmptySearch#0;class#FirstTest#0" />
             <element signature="method#testChangeScreenOrientationOnSearchResults#0;class#FirstTest#0" />
+            <element signature="method#testCheckSearchArticleInBackground#0;class#FirstTest#0" />
             <element signature="method#waitForElementPresent#0;class#FirstTest#0" />
             <element signature="method#waitForElementPresent#1;class#FirstTest#0" />
-            <element signature="method#waitForElementAndClick#0;class#FirstTest#0" />
-            <element signature="method#waitForElementAndSendKeys#0;class#FirstTest#0" />
             <element signature="method#waitForElementNotPresent#0;class#FirstTest#0" />
             <element signature="method#waitForElementAndClear#0;class#FirstTest#0" />
-            <element signature="e#13739#13740#0" expanded="true" />
-            <element signature="e#13788#13789#0" expanded="true" />
+            <element signature="e#19810#19811#0" expanded="true" />
+            <element signature="e#19859#19860#0" expanded="true" />
             <element signature="method#swipeUp#0;class#FirstTest#0" />
-            <element signature="method#swipeElementToLeft#0;class#FirstTest#0" />
+            <element signature="e#20383#20384#0" expanded="true" />
+            <element signature="e#20411#20412#0" expanded="true" />
+            <element signature="method#swipeUpToFindElement#0;class#FirstTest#0" />
           </folding>
         </state>
       </provider>

@@ -386,7 +386,7 @@ public class FirstTest {
                 5
         );
 
-        String request = "Linkin park discography";
+        String request = "Java";
 
         waitForElementAndSendKeys(
                 By.xpath("//*[contains(@text, 'Search…')]"),
@@ -541,6 +541,173 @@ public class FirstTest {
         );
     }
 
+    @Test
+    public void testSaveTwoArticlesAndDeleteOneOfThem()
+    {
+        waitForElementAndClick(
+                By.xpath("//*[contains(@text, 'Search Wikipedia')]"),
+                "Cannot find 'Search Wikipedia' input",
+                5
+        );
+
+        String request = "Java";
+        waitForElementAndSendKeys(
+                By.xpath("//*[contains(@text, 'Search…')]"),
+                request,
+                "Cannot find search input",
+                5
+        );
+
+        String search_result_locator = "//*[@resource-id='org.wikipedia:id/search_results_list']/*[@resource-id='org.wikipedia:id/page_list_item_container']";
+        waitForElementPresent(
+                By.xpath(search_result_locator),
+                "Cannot find anything by the request '" + request + "'",
+                15
+        );
+
+        List<WebElement> elements = driver.findElements(By.xpath(search_result_locator));
+        elements.get(0).click();
+
+        waitForElementPresent(
+                By.id("org.wikipedia:id/view_page_title_text"),
+                "Cannot find article title",
+                15
+        );
+
+        String title_first = driver.findElement(By.id("org.wikipedia:id/view_page_title_text")).getAttribute("text");
+
+        waitForElementAndClick(
+                By.xpath("//android.widget.ImageView[@content-desc='More options']"),
+                "Cannot find button to open article options",
+                15
+        );
+
+        waitForElementAndClick(
+                By.xpath("//*[@text='Add to reading list']"),
+                "Cannot find option to add article to reading list",
+                15
+        );
+
+        waitForElementAndClick(
+                By.id("org.wikipedia:id/onboarding_button"),
+                "Cannot find 'Got it' tip overlay",
+                10
+        );
+
+        waitForElementAndClear(
+                By.id("org.wikipedia:id/text_input"),
+                "Cannot find input to set name of article folder",
+                10
+        );
+
+        String name_of_folder = "Ex5";
+        waitForElementAndSendKeys(
+                By.id("org.wikipedia:id/text_input"),
+                name_of_folder,
+                "Cannot put text into article folder input",
+                5
+        );
+
+        waitForElementAndClick(
+                By.xpath("//*[@text='OK']"),
+                "Cannot press OK button",
+                5
+        );
+
+        waitForElementAndClick(
+                By.xpath("//android.widget.ImageButton[@content-desc='Navigate up']"),
+                "Cannot close article, cannot find X button",
+                5
+        );
+
+        waitForElementAndClick(
+                By.xpath("//*[contains(@text, 'Search Wikipedia')]"),
+                "Cannot find 'Search Wikipedia' input",
+                5
+        );
+
+        request = "Junit";
+        waitForElementAndSendKeys(
+                By.xpath("//*[contains(@text, 'Search…')]"),
+                request,
+                "Cannot find search input",
+                5
+        );
+
+        waitForElementPresent(
+                By.xpath(search_result_locator),
+                "Cannot find anything by the request '" + request + "'",
+                15
+        );
+
+        elements = driver.findElements(By.xpath(search_result_locator));
+
+        elements.get(1).click();
+
+        waitForElementPresent(
+                By.id("org.wikipedia:id/view_page_title_text"),
+                "Cannot find article title",
+                15
+        );
+
+        String title_second = driver.findElement(By.id("org.wikipedia:id/view_page_title_text")).getAttribute("text");
+
+        waitForElementAndClick(
+                By.xpath("//android.widget.ImageView[@content-desc='More options']"),
+                "Cannot find button to open article options",
+                20
+        );
+
+        waitForElementAndClick(
+                By.xpath("//*[@text='Add to reading list']"),
+                "Cannot find option to add article to reading list",
+                15
+        );
+
+        waitForElementAndClick(
+                By.xpath("//*[@resource-id='org.wikipedia:id/list_of_lists']//*[@text='" + name_of_folder + "']"),
+                "Cannot find created folder by name '" + name_of_folder + "'",
+                15
+        );
+
+        waitForElementAndClick(
+                By.id("org.wikipedia:id/snackbar_action"),
+                "Cannot find the button on SnackBar",
+                15
+        );
+
+        swipeElementToLeft(
+                By.xpath("//*[@text='" + title_second + "']"),
+                "Cannot find saved article"
+        );
+
+        waitForElementNotPresent(
+                By.xpath("//*[@text='" + title_second + "']"),
+                "Cannot delete saved article",
+                15
+        );
+
+        waitForElementAndClick(
+                By.xpath("//*[@text='" + title_first + "']"),
+                "Cannot find the article by name '" + title_first + "'",
+                15
+        );
+
+        waitForElementPresent(
+                By.id("org.wikipedia:id/view_page_title_text"),
+                "Cannot find article title",
+                15
+        );
+
+        String title_article = driver.findElement(By.id("org.wikipedia:id/view_page_title_text")).getAttribute("text");
+
+        Assert.assertEquals(
+                "",
+                title_first,
+                title_article
+        );
+    }
+
     private WebElement waitForElementPresent(By by, String error_message, long timeoutInSeconds)
     {
         WebDriverWait wait = new WebDriverWait(driver, timeoutInSeconds);
@@ -632,7 +799,7 @@ public class FirstTest {
         WebElement element = waitForElementPresent(
                 by,
                 error_message,
-                10);
+                20);
 
         int left_x = element.getLocation().getX();
         int right_x = left_x + element.getSize().getWidth();
