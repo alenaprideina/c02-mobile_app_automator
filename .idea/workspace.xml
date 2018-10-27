@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6870c719-2ef8-465b-a91d-5ec805c715d9" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/FirstTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FirstTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -21,12 +20,13 @@
       <file leaf-file-name="FirstTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/FirstTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-793">
-              <caret line="373" column="44" selection-start-line="373" selection-start-column="17" selection-end-line="373" selection-end-column="44" />
+            <state relative-caret-position="387">
+              <caret line="506" column="43" selection-start-line="506" selection-start-column="43" selection-end-line="506" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#setUp#0;class#FirstTest#0" />
                 <element signature="method#testPlaceholderInSearchInput#0;class#FirstTest#0" />
+                <element signature="method#saveFirstArticleToMyList#0;class#FirstTest#0" />
                 <element signature="method#waitForElementPresent#0;class#FirstTest#0" />
                 <element signature="method#waitForElementPresent#1;class#FirstTest#0" />
                 <element signature="method#waitForElementAndClick#0;class#FirstTest#0" />
@@ -55,6 +55,7 @@
     <findStrings>
       <find>Cannot find button to open article options</find>
       <find>Cannot delete saved article</find>
+      <find>assertElementNotPresent</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -123,7 +124,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.FirstTest.saveFirstArticleToMyList">
+  <component name="RunManager" selected="JUnit.FirstTest.testChangeScreenOrientationOnSearchResults">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -161,6 +162,23 @@
       </option>
       <patterns />
     </configuration>
+    <configuration name="FirstTest.testAmountOfEmptySearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaAppium" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FirstTest" />
+      <option name="METHOD_NAME" value="testAmountOfEmptySearch" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
     <configuration name="FirstTest.testAmountOfNotEmptySearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaAppium" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -178,30 +196,13 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="FirstTest.testSearchResult" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FirstTest.testChangeScreenOrientationOnSearchResults" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaAppium" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="FirstTest" />
-      <option name="METHOD_NAME" value="testSearchResult" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="FirstTest.testSwipeArticle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaAppium" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FirstTest" />
-      <option name="METHOD_NAME" value="testSwipeArticle" />
+      <option name="METHOD_NAME" value="testChangeScreenOrientationOnSearchResults" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -252,18 +253,18 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.FirstTest" />
-      <item itemvalue="JUnit.FirstTest.testSearchResult" />
-      <item itemvalue="JUnit.FirstTest.testSwipeArticle" />
       <item itemvalue="JUnit.FirstTest.saveFirstArticleToMyList" />
       <item itemvalue="JUnit.FirstTest.testAmountOfNotEmptySearch" />
+      <item itemvalue="JUnit.FirstTest.testAmountOfEmptySearch" />
+      <item itemvalue="JUnit.FirstTest.testChangeScreenOrientationOnSearchResults" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FirstTest.testChangeScreenOrientationOnSearchResults" />
+        <item itemvalue="JUnit.FirstTest.testAmountOfEmptySearch" />
         <item itemvalue="JUnit.FirstTest.saveFirstArticleToMyList" />
         <item itemvalue="JUnit.FirstTest" />
         <item itemvalue="JUnit.FirstTest.testAmountOfNotEmptySearch" />
-        <item itemvalue="JUnit.FirstTest.testSwipeArticle" />
-        <item itemvalue="JUnit.FirstTest.testSearchResult" />
       </list>
     </recent_temporary>
   </component>
@@ -281,27 +282,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FirstTest_saveFirstArticleToMyList - 2018.10.27 at 18h 30m 18s.xml">
-      <configuration name="FirstTest.saveFirstArticleToMyList" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FirstTest_saveFirstArticleToMyList - 2018.10.27 at 18h 32m 58s.xml">
-      <configuration name="FirstTest.saveFirstArticleToMyList" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FirstTest_saveFirstArticleToMyList - 2018.10.27 at 18h 39m 07s.xml">
-      <configuration name="FirstTest.saveFirstArticleToMyList" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FirstTest_saveFirstArticleToMyList - 2018.10.27 at 18h 40m 08s.xml">
-      <configuration name="FirstTest.saveFirstArticleToMyList" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FirstTest_testAmountOfNotEmptySearch - 2018.10.27 at 19h 03m 59s.xml">
-      <configuration name="FirstTest.testAmountOfNotEmptySearch" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FirstTest - 2018.10.27 at 19h 16m 29s.xml">
-      <configuration name="FirstTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FirstTest - 2018.10.27 at 19h 19m 21s.xml">
-      <configuration name="FirstTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="FirstTest - 2018.10.27 at 19h 24m 04s.xml">
       <configuration name="FirstTest" configurationId="JUnit" />
     </history-entry>
@@ -311,6 +291,27 @@
     <history-entry file="FirstTest_saveFirstArticleToMyList - 2018.10.27 at 19h 27m 23s.xml">
       <configuration name="FirstTest.saveFirstArticleToMyList" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="FirstTest_testAmountOfEmptySearch - 2018.10.27 at 20h 22m 09s.xml">
+      <configuration name="FirstTest.testAmountOfEmptySearch" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FirstTest_testAmountOfEmptySearch - 2018.10.27 at 20h 24m 57s.xml">
+      <configuration name="FirstTest.testAmountOfEmptySearch" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FirstTest_testAmountOfEmptySearch - 2018.10.27 at 20h 31m 26s.xml">
+      <configuration name="FirstTest.testAmountOfEmptySearch" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FirstTest_testAmountOfEmptySearch - 2018.10.27 at 20h 31m 48s.xml">
+      <configuration name="FirstTest.testAmountOfEmptySearch" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FirstTest_testAmountOfEmptySearch - 2018.10.27 at 20h 33m 31s.xml">
+      <configuration name="FirstTest.testAmountOfEmptySearch" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FirstTest_testChangeScreenOrientationOnSearchResults - 2018.10.27 at 21h 17m 12s.xml">
+      <configuration name="FirstTest.testChangeScreenOrientationOnSearchResults" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FirstTest_testChangeScreenOrientationOnSearchResults - 2018.10.27 at 21h 19m 45s.xml">
+      <configuration name="FirstTest.testChangeScreenOrientationOnSearchResults" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -318,7 +319,7 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32956153" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32848486" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
@@ -362,6 +363,7 @@
             <element signature="imports" expanded="true" />
             <element signature="method#setUp#0;class#FirstTest#0" />
             <element signature="method#testPlaceholderInSearchInput#0;class#FirstTest#0" />
+            <element signature="method#saveFirstArticleToMyList#0;class#FirstTest#0" />
             <element signature="method#waitForElementPresent#0;class#FirstTest#0" />
             <element signature="method#waitForElementPresent#1;class#FirstTest#0" />
             <element signature="method#waitForElementAndClick#0;class#FirstTest#0" />
@@ -384,6 +386,7 @@
             <element signature="imports" expanded="true" />
             <element signature="method#setUp#0;class#FirstTest#0" />
             <element signature="method#testPlaceholderInSearchInput#0;class#FirstTest#0" />
+            <element signature="method#saveFirstArticleToMyList#0;class#FirstTest#0" />
             <element signature="method#waitForElementPresent#0;class#FirstTest#0" />
             <element signature="method#waitForElementPresent#1;class#FirstTest#0" />
             <element signature="method#waitForElementAndClick#0;class#FirstTest#0" />
@@ -406,6 +409,7 @@
             <element signature="imports" expanded="true" />
             <element signature="method#setUp#0;class#FirstTest#0" />
             <element signature="method#testPlaceholderInSearchInput#0;class#FirstTest#0" />
+            <element signature="method#saveFirstArticleToMyList#0;class#FirstTest#0" />
             <element signature="method#waitForElementPresent#0;class#FirstTest#0" />
             <element signature="method#waitForElementPresent#1;class#FirstTest#0" />
             <element signature="method#waitForElementAndClick#0;class#FirstTest#0" />
@@ -428,6 +432,7 @@
             <element signature="imports" expanded="true" />
             <element signature="method#setUp#0;class#FirstTest#0" />
             <element signature="method#testPlaceholderInSearchInput#0;class#FirstTest#0" />
+            <element signature="method#saveFirstArticleToMyList#0;class#FirstTest#0" />
             <element signature="method#waitForElementPresent#0;class#FirstTest#0" />
             <element signature="method#waitForElementPresent#1;class#FirstTest#0" />
             <element signature="method#waitForElementAndClick#0;class#FirstTest#0" />
@@ -450,6 +455,7 @@
             <element signature="imports" expanded="true" />
             <element signature="method#setUp#0;class#FirstTest#0" />
             <element signature="method#testPlaceholderInSearchInput#0;class#FirstTest#0" />
+            <element signature="method#saveFirstArticleToMyList#0;class#FirstTest#0" />
             <element signature="method#waitForElementPresent#0;class#FirstTest#0" />
             <element signature="method#waitForElementPresent#1;class#FirstTest#0" />
             <element signature="method#waitForElementAndClick#0;class#FirstTest#0" />
@@ -472,6 +478,7 @@
             <element signature="imports" expanded="true" />
             <element signature="method#setUp#0;class#FirstTest#0" />
             <element signature="method#testPlaceholderInSearchInput#0;class#FirstTest#0" />
+            <element signature="method#saveFirstArticleToMyList#0;class#FirstTest#0" />
             <element signature="method#waitForElementPresent#0;class#FirstTest#0" />
             <element signature="method#waitForElementPresent#1;class#FirstTest#0" />
             <element signature="method#waitForElementAndClick#0;class#FirstTest#0" />
@@ -494,6 +501,7 @@
             <element signature="imports" expanded="true" />
             <element signature="method#setUp#0;class#FirstTest#0" />
             <element signature="method#testPlaceholderInSearchInput#0;class#FirstTest#0" />
+            <element signature="method#saveFirstArticleToMyList#0;class#FirstTest#0" />
             <element signature="method#waitForElementPresent#0;class#FirstTest#0" />
             <element signature="method#waitForElementPresent#1;class#FirstTest#0" />
             <element signature="method#waitForElementAndClick#0;class#FirstTest#0" />
@@ -530,12 +538,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FirstTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-793">
-          <caret line="373" column="44" selection-start-line="373" selection-start-column="17" selection-end-line="373" selection-end-column="44" />
+        <state relative-caret-position="387">
+          <caret line="506" column="43" selection-start-line="506" selection-start-column="43" selection-end-line="506" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#setUp#0;class#FirstTest#0" />
             <element signature="method#testPlaceholderInSearchInput#0;class#FirstTest#0" />
+            <element signature="method#saveFirstArticleToMyList#0;class#FirstTest#0" />
             <element signature="method#waitForElementPresent#0;class#FirstTest#0" />
             <element signature="method#waitForElementPresent#1;class#FirstTest#0" />
             <element signature="method#waitForElementAndClick#0;class#FirstTest#0" />
