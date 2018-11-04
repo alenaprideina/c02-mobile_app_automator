@@ -29,6 +29,21 @@ public class ArticleTests extends CoreTestCase {
     }
 
     @Test
+    public void testArticleTitlePresent()
+    {
+        SearchPageObject SearchPageObject = new SearchPageObject(driver);
+
+        SearchPageObject.initSearchInput();
+        String request = "Java";
+        SearchPageObject.typeSearchLine(request);
+
+        SearchPageObject.clickByArticleWithSubstring("Object-oriented programming language");
+
+        ArticlePageObject ArticlePageObject = new ArticlePageObject(driver);
+        ArticlePageObject.assertTitlePresent();
+    }
+
+    @Test
     public void testSwipeArticle()
     {
         String request = "Appium";

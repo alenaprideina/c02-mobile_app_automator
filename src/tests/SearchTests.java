@@ -16,6 +16,20 @@ public class SearchTests extends CoreTestCase {
         SearchPageObject.waitForSearchResult("Object-oriented programming language");
     }
 
+    @Test
+    public void testPlaceholderInSearchInput()
+    {
+        SearchPageObject SearchPageObject = new SearchPageObject(driver);
+
+        SearchPageObject.initSearchInput();
+        String search_placeholder = SearchPageObject.getPlaceholderSearchInput();
+
+        assertEquals(
+                "Placeholder is not 'Search…'!",
+                "Search…",
+                search_placeholder
+        );
+    }
 
     @Test
     public void testCancelSearch()
@@ -26,6 +40,26 @@ public class SearchTests extends CoreTestCase {
         SearchPageObject.waitForCancelButtonToAppear();
         SearchPageObject.clickCancelSearch();
         SearchPageObject.waitForCancelButtonToDisappear();
+    }
+
+    @Test
+    public void testCancelSearchResults()
+    {
+        SearchPageObject SearchPageObject = new SearchPageObject(driver);
+
+        SearchPageObject.initSearchInput();
+        String request = "Junit";
+        SearchPageObject.typeSearchLine(request);
+
+        int count_articles = SearchPageObject.getAmountOfFoundArticles();
+
+        assertTrue(
+                "Wikipedia found less than 2 articles by '" + request + "'",
+                count_articles > 1
+        );
+
+        SearchPageObject.clickCancelSearch();
+        SearchPageObject.assertThereIsNoResultOfSearch();
     }
 
     @Test
@@ -54,6 +88,17 @@ public class SearchTests extends CoreTestCase {
         SearchPageObject.typeSearchLine(request);
         SearchPageObject.waitForEmptyResultsLabel();
         SearchPageObject.assertThereIsNoResultOfSearch();
+    }
+
+    @Test
+    public void testSearchResultMatch()
+    {
+        SearchPageObject SearchPageObject = new SearchPageObject(driver);
+
+        SearchPageObject.initSearchInput();
+        String request = "Java";
+        SearchPageObject.typeSearchLine(request);
+        SearchPageObject.assertResultTitlesContainsRequest(request);
     }
 
 }
