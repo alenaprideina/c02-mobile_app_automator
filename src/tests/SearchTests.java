@@ -100,5 +100,4 @@ public class SearchTests extends CoreTestCase {
         SearchPageObject.typeSearchLine(request);
         SearchPageObject.assertResultTitlesContainsRequest(request);
     }
-
 }

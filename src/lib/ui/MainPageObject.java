@@ -70,13 +70,12 @@ public class MainPageObject {
 
     public void swipeUp(int timeOfSwipe )
     {
-        TouchAction action = new TouchAction(driver);
         Dimension size = driver.manage().window().getSize();
         int x = size.width / 2;
         int start_y = (int) (size.height * 0.8);
         int end_y = (int) (size.height * 0.2);
 
-
+        TouchAction action = new TouchAction(driver);
         action
                 .press(x, start_y)
                 .waitAction(timeOfSwipe)

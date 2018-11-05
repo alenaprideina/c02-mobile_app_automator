@@ -51,7 +51,7 @@ public class MyListsTests extends CoreTestCase {
         ArticlePageObject ArticlePageObject = new ArticlePageObject(driver);
         String title_first = ArticlePageObject.getArticleTitle();
 
-        String name_of_folder = "Exercize 8";
+        String name_of_folder = "My first folder";
         ArticlePageObject.addArticleToMyList(name_of_folder);
         ArticlePageObject.closeArticle();
 
@@ -61,7 +61,6 @@ public class MyListsTests extends CoreTestCase {
         SearchPageObject.clickByArticleWithSubstring("Unit testing library for Java");
 
         String title_second = ArticlePageObject.getArticleTitle();
-
         ArticlePageObject.addArticleToMyExistList(name_of_folder);
         ArticlePageObject.closeArticle();
 
@@ -76,7 +75,7 @@ public class MyListsTests extends CoreTestCase {
         String title_article = ArticlePageObject.getArticleTitle();
 
         assertEquals(
-                "",
+                "Article title is not match in Mylists and in Article",
                 title_first,
                 title_article
         );
