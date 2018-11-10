@@ -1,6 +1,7 @@
 package tests;
 
 import lib.CoreTestCase;
+import lib.ui.MainPageObject;
 import lib.ui.SearchPageObject;
 import org.junit.Test;
 
@@ -99,5 +100,18 @@ public class SearchTests extends CoreTestCase {
         String request = "Java";
         SearchPageObject.typeSearchLine(request);
         SearchPageObject.assertResultTitlesContainsRequest(request);
+    }
+
+    @Test
+    public void testSearchResultMatchTitleAndDesc()
+    {
+        SearchPageObject SearchPageObject = new SearchPageObject(driver);
+
+        SearchPageObject.initSearchInput();
+        String request = "Novosibirsk";
+        SearchPageObject.typeSearchLine(request);
+        SearchPageObject.waitForElementByTitleAndDescription("Novosibirsk", "Russian city, the administrative center of Siberian Federal District");
+        SearchPageObject.waitForElementByTitleAndDescription("Novosibirsk Oblast", "Federal subject of Russia");
+        SearchPageObject.waitForElementByTitleAndDescription("Novosibirsk State University", "University");
     }
 }

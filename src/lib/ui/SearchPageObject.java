@@ -13,6 +13,7 @@ public class SearchPageObject extends MainPageObject {
         SEARCH_INPUT = "org.wikipedia:id/search_src_text",
         SEARCH_CANCEL_BUTTON = "org.wikipedia:id/search_close_btn",
         SEARCH_RESULT_BY_SUBSTRING_TPL = "//*[@resource-id='org.wikipedia:id/page_list_item_container']//*[@text='{SUBSTRING}']",
+        SEARCH_RESULT_BY_TWO_SUBSTRING_TPL = "//*[@resource-id='org.wikipedia:id/page_list_item_title' and @text='{TITLE}']/..//*[@resource-id='org.wikipedia:id/page_list_item_description' and @text='{DESC}']",
         SEARCH_RESULT_ELEMENT = "//*[@resource-id='org.wikipedia:id/search_results_list']/*[@resource-id='org.wikipedia:id/page_list_item_container']",
         SEARCH_ITEM_TITLE = "org.wikipedia:id/page_list_item_title",
         SEARCH_EMPTY_RESULT_ELEMENT = "//*[@text='No results found']";
@@ -26,6 +27,11 @@ public class SearchPageObject extends MainPageObject {
     private static String getResultSearchElement(String substring)
     {
         return SEARCH_RESULT_BY_SUBSTRING_TPL.replace("{SUBSTRING}", substring);
+    }
+
+    private static String getResultSearchElement(String title, String desc)
+    {
+        return SEARCH_RESULT_BY_TWO_SUBSTRING_TPL.replace("{TITLE}", title).replace("{DESC}", desc);
     }
     /* TEMPLATE METHODS */
 
@@ -118,5 +124,16 @@ public class SearchPageObject extends MainPageObject {
                 this.assertFail("Article without '" + request + "'" + " in title was found in search results.");
             }
         }
+    }
+
+    public void waitForElementByTitleAndDescription(String title, String description)
+    {
+        String search_result_xpath = getResultSearchElement(title, description);
+
+        this.waitForElementPresent(
+                By.xpath(search_result_xpath),
+                "Cannot find element with title = '" + title + "' and description = '" + description + "'",
+                20
+        );
     }
 }
