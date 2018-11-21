@@ -3,6 +3,8 @@ package tests;
 import lib.CoreTestCase;
 import lib.ui.ArticlePageObject;
 import lib.ui.SearchPageObject;
+import lib.ui.factories.ArticlePageObjectFactory;
+import lib.ui.factories.SearchPageObjectFactory;
 import org.junit.Test;
 
 public class ChangeConditionTests extends CoreTestCase {
@@ -10,15 +12,15 @@ public class ChangeConditionTests extends CoreTestCase {
     @Test
     public void testChangeScreenOrientationOnSearchResults()
     {
-        String request = "Java";
+        String request = "Singleton pattern";
 
-        SearchPageObject SearchPageObject = new SearchPageObject(driver);
+        SearchPageObject SearchPageObject = SearchPageObjectFactory.get(driver);
 
         SearchPageObject.initSearchInput();
         SearchPageObject.typeSearchLine(request);
-        SearchPageObject.clickByArticleWithSubstring("Object-oriented programming language");
+        SearchPageObject.clickByArticleWithSubstring("Design pattern in object-oriented software development");
 
-        ArticlePageObject ArticlePageObject = new ArticlePageObject(driver);
+        ArticlePageObject ArticlePageObject = ArticlePageObjectFactory.get(driver);
         String title_before_rotation = ArticlePageObject.getArticleTitle();
 
         this.rotateScreenLandscape();
@@ -45,15 +47,15 @@ public class ChangeConditionTests extends CoreTestCase {
     @Test
     public void testCheckSearchArticleInBackground()
     {
-        String request = "Java";
+        String request = "Singleton pattern";
 
-        SearchPageObject SearchPageObject = new SearchPageObject(driver);
+        SearchPageObject SearchPageObject = SearchPageObjectFactory.get(driver);
 
         SearchPageObject.initSearchInput();
         SearchPageObject.typeSearchLine(request);
-        SearchPageObject.waitForSearchResult("Object-oriented programming language");
+        SearchPageObject.waitForSearchResult("Design pattern in object-oriented software development");
         this.backgroundApp(2);
-        SearchPageObject.waitForSearchResult("Object-oriented programming language");
+        SearchPageObject.waitForSearchResult("Design pattern in object-oriented software development");
     }
 
 }

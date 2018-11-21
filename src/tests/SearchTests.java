@@ -1,8 +1,8 @@
 package tests;
 
 import lib.CoreTestCase;
-import lib.ui.MainPageObject;
 import lib.ui.SearchPageObject;
+import lib.ui.factories.SearchPageObjectFactory;
 import org.junit.Test;
 
 public class SearchTests extends CoreTestCase {
@@ -10,17 +10,18 @@ public class SearchTests extends CoreTestCase {
     @Test
     public void testSearch()
     {
-        SearchPageObject SearchPageObject = new SearchPageObject(driver);
+        SearchPageObject SearchPageObject = SearchPageObjectFactory.get(driver);
 
         SearchPageObject.initSearchInput();
         SearchPageObject.typeSearchLine("Java");
         SearchPageObject.waitForSearchResult("Object-oriented programming language");
     }
 
+    // для iOS порефакторить
     @Test
     public void testPlaceholderInSearchInput()
     {
-        SearchPageObject SearchPageObject = new SearchPageObject(driver);
+        SearchPageObject SearchPageObject = SearchPageObjectFactory.get(driver);
 
         SearchPageObject.initSearchInput();
         String search_placeholder = SearchPageObject.getPlaceholderSearchInput();
@@ -35,7 +36,7 @@ public class SearchTests extends CoreTestCase {
     @Test
     public void testCancelSearch()
     {
-        SearchPageObject SearchPageObject = new SearchPageObject(driver);
+        SearchPageObject SearchPageObject = SearchPageObjectFactory.get(driver);
 
         SearchPageObject.initSearchInput();
         SearchPageObject.waitForCancelButtonToAppear();
@@ -46,7 +47,7 @@ public class SearchTests extends CoreTestCase {
     @Test
     public void testCancelSearchResults()
     {
-        SearchPageObject SearchPageObject = new SearchPageObject(driver);
+        SearchPageObject SearchPageObject = SearchPageObjectFactory.get(driver);
 
         SearchPageObject.initSearchInput();
         String request = "Junit";
@@ -66,7 +67,7 @@ public class SearchTests extends CoreTestCase {
     @Test
     public void testAmountOfNotEmptySearch()
     {
-        SearchPageObject SearchPageObject = new SearchPageObject(driver);
+        SearchPageObject SearchPageObject = SearchPageObjectFactory.get(driver);
 
         SearchPageObject.initSearchInput();
         String request = "Java";
@@ -82,7 +83,7 @@ public class SearchTests extends CoreTestCase {
     @Test
     public void testAmountOfEmptySearch()
     {
-        SearchPageObject SearchPageObject = new SearchPageObject(driver);
+        SearchPageObject SearchPageObject = SearchPageObjectFactory.get(driver);
 
         SearchPageObject.initSearchInput();
         String request = "qqwewgrge";
@@ -91,10 +92,11 @@ public class SearchTests extends CoreTestCase {
         SearchPageObject.assertThereIsNoResultOfSearch();
     }
 
+    // для iOS порефакторить
     @Test
     public void testSearchResultMatch()
     {
-        SearchPageObject SearchPageObject = new SearchPageObject(driver);
+        SearchPageObject SearchPageObject = SearchPageObjectFactory.get(driver);
 
         SearchPageObject.initSearchInput();
         String request = "Java";
@@ -102,10 +104,11 @@ public class SearchTests extends CoreTestCase {
         SearchPageObject.assertResultTitlesContainsRequest(request);
     }
 
+    // Ex12*: Рефакторинг тестов
     @Test
     public void testSearchResultMatchTitleAndDesc()
     {
-        SearchPageObject SearchPageObject = new SearchPageObject(driver);
+        SearchPageObject SearchPageObject = SearchPageObjectFactory.get(driver);
 
         SearchPageObject.initSearchInput();
         String request = "Novosibirsk";

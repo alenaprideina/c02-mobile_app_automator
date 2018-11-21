@@ -3,6 +3,8 @@ package tests;
 import lib.CoreTestCase;
 import lib.ui.ArticlePageObject;
 import lib.ui.SearchPageObject;
+import lib.ui.factories.ArticlePageObjectFactory;
+import lib.ui.factories.SearchPageObjectFactory;
 import org.junit.Test;
 
 public class ArticleTests extends CoreTestCase {
@@ -10,51 +12,50 @@ public class ArticleTests extends CoreTestCase {
     @Test
     public void testCompareArticleTitle()
     {
-        String request = "Java";
+        String request = "Singleton pattern";
 
-        SearchPageObject SearchPageObject = new SearchPageObject(driver);
+        SearchPageObject SearchPageObject = SearchPageObjectFactory.get(driver);
 
         SearchPageObject.initSearchInput();
         SearchPageObject.typeSearchLine(request);
-        SearchPageObject.clickByArticleWithSubstring("Object-oriented programming language");
+        SearchPageObject.clickByArticleWithSubstring("Design pattern in object-oriented software development");
 
-        ArticlePageObject ArticlePageObject = new ArticlePageObject(driver);
+        ArticlePageObject ArticlePageObject = ArticlePageObjectFactory.get(driver);
         String article_title = ArticlePageObject.getArticleTitle();
 
         assertEquals(
                 "We see unexpected title!",
-                "Java (programming language)",
+                "Singleton pattern",
                 article_title
         );
     }
 
+    // для iOS порефакторить
     @Test
     public void testArticleTitlePresent()
     {
-        SearchPageObject SearchPageObject = new SearchPageObject(driver);
+        SearchPageObject SearchPageObject = SearchPageObjectFactory.get(driver);
 
         SearchPageObject.initSearchInput();
-        String request = "Java";
+        String request = "Singleton pattern";
         SearchPageObject.typeSearchLine(request);
 
-        SearchPageObject.clickByArticleWithSubstring("Object-oriented programming language");
+        SearchPageObject.clickByArticleWithSubstring("Design pattern in object-oriented software development");
 
-        ArticlePageObject ArticlePageObject = new ArticlePageObject(driver);
+        ArticlePageObject ArticlePageObject = ArticlePageObjectFactory.get(driver);
         ArticlePageObject.assertTitlePresent();
     }
 
     @Test
     public void testSwipeArticle()
     {
-        String request = "Appium";
-
-        SearchPageObject SearchPageObject = new SearchPageObject(driver);
+        SearchPageObject SearchPageObject = SearchPageObjectFactory.get(driver);
 
         SearchPageObject.initSearchInput();
-        SearchPageObject.typeSearchLine(request);
-        SearchPageObject.clickByArticleWithSubstring(request);
+        SearchPageObject.typeSearchLine("Singleton pattern");
+        SearchPageObject.clickByArticleWithSubstring("Design pattern in object-oriented software development");
 
-        ArticlePageObject ArticlePageObject = new ArticlePageObject(driver);
+        ArticlePageObject ArticlePageObject = ArticlePageObjectFactory.get(driver);
         ArticlePageObject.waitForTitleElement();
         ArticlePageObject.swipeToFooter();
     }

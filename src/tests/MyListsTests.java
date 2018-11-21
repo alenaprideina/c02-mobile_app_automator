@@ -1,54 +1,69 @@
 package tests;
 
 import lib.CoreTestCase;
+import lib.Platform;
 import lib.ui.ArticlePageObject;
 import lib.ui.MyListsPageObject;
 import lib.ui.NavigationUI;
 import lib.ui.SearchPageObject;
+import lib.ui.factories.ArticlePageObjectFactory;
+import lib.ui.factories.MyListsPageObjectFactory;
+import lib.ui.factories.NavigationUIFactory;
+import lib.ui.factories.SearchPageObjectFactory;
 import org.junit.Test;
 
-public class MyListsTests extends CoreTestCase {
+public class MyListsTests extends CoreTestCase
+{
+    private static final String name_of_folder = "Learning programming";
 
     @Test
     public void testSaveFirstArticleToMyList()
     {
-        String request = "Java";
+        String request = "Singleton pattern";
 
-        SearchPageObject SearchPageObject = new SearchPageObject(driver);
+        SearchPageObject SearchPageObject = SearchPageObjectFactory.get(driver);
 
         SearchPageObject.initSearchInput();
         SearchPageObject.typeSearchLine(request);
-        SearchPageObject.clickByArticleWithSubstring("Object-oriented programming language");
+        SearchPageObject.clickByArticleWithSubstring("Design pattern in object-oriented software development");
 
-        ArticlePageObject ArticlePageObject = new ArticlePageObject(driver);
-
+        ArticlePageObject ArticlePageObject = ArticlePageObjectFactory.get(driver);
         ArticlePageObject.waitForTitleElement();
-
         String article_title = ArticlePageObject.getArticleTitle();
-        String name_of_folder = "Learning programming";
 
-        ArticlePageObject.addArticleToMyList(name_of_folder);
+        if (Platform.getInstance().isAndroid()) {
+            ArticlePageObject.addArticleToMyList(name_of_folder);
+        } else {
+            ArticlePageObject.addArticleToMySaved();
+            ArticlePageObject.closeTipForSaved();
+        }
+
         ArticlePageObject.closeArticle();
 
-        NavigationUI NavigationUI = new NavigationUI(driver);
+        NavigationUI NavigationUI = NavigationUIFactory.get(driver);
         NavigationUI.clickMyLists();
 
-        MyListsPageObject MyListsPageObject = new MyListsPageObject(driver);
-        MyListsPageObject.openFolderByName(name_of_folder);
+        MyListsPageObject MyListsPageObject = MyListsPageObjectFactory.get(driver);
+
+        if (Platform.getInstance().isAndroid()) {
+            MyListsPageObject.openFolderByName(name_of_folder);
+        }
+
         MyListsPageObject.swipeByArticleToDelete(article_title);
     }
 
+    // Ex11: Рефакторинг тестов
     @Test
     public void testSaveTwoArticlesAndDeleteOneOfThem()
     {
-        SearchPageObject SearchPageObject = new SearchPageObject(driver);
+        SearchPageObject SearchPageObject = SearchPageObjectFactory.get(driver);
 
         SearchPageObject.initSearchInput();
         String request = "Java";
         SearchPageObject.typeSearchLine(request);
         SearchPageObject.clickByArticleWithSubstring("Object-oriented programming language");
 
-        ArticlePageObject ArticlePageObject = new ArticlePageObject(driver);
+        ArticlePageObject ArticlePageObject = ArticlePageObjectFactory.get(driver);
         String title_first = ArticlePageObject.getArticleTitle();
 
         String name_of_folder = "My first folder";
@@ -64,10 +79,10 @@ public class MyListsTests extends CoreTestCase {
         ArticlePageObject.addArticleToMyExistList(name_of_folder);
         ArticlePageObject.closeArticle();
 
-        NavigationUI NavigationUI = new NavigationUI(driver);
+        NavigationUI NavigationUI = NavigationUIFactory.get(driver);
         NavigationUI.clickMyLists();
 
-        MyListsPageObject MyListsPageObject = new MyListsPageObject(driver);
+        MyListsPageObject MyListsPageObject = MyListsPageObjectFactory.get(driver);
         MyListsPageObject.openFolderByName(name_of_folder);
         MyListsPageObject.swipeByArticleToDelete(title_second);
         MyListsPageObject.openArticleByTitle(title_first);

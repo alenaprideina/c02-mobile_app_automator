@@ -1,22 +1,23 @@
 package lib.ui;
 
 import io.appium.java_client.AppiumDriver;
+import lib.Platform;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
-public class SearchPageObject extends MainPageObject {
+abstract public class SearchPageObject extends MainPageObject {
 
-    public static final String
-        SEARCH_INIT_ELEMENT = "xpath://*[contains(@text, 'Search Wikipedia')]",
-        SEARCH_INPUT = "id:org.wikipedia:id/search_src_text",
-        SEARCH_CANCEL_BUTTON = "id:org.wikipedia:id/search_close_btn",
-        SEARCH_RESULT_BY_SUBSTRING_TPL = "xpath://*[@resource-id='org.wikipedia:id/page_list_item_container']//*[@text='{SUBSTRING}']",
-        SEARCH_RESULT_BY_TWO_SUBSTRING_TPL = "xpath://*[@resource-id='org.wikipedia:id/page_list_item_title' and @text='{TITLE}']/..//*[@resource-id='org.wikipedia:id/page_list_item_description' and @text='{DESC}']",
-        SEARCH_RESULT_ELEMENT = "xpath://*[@resource-id='org.wikipedia:id/search_results_list']/*[@resource-id='org.wikipedia:id/page_list_item_container']",
-        SEARCH_ITEM_TITLE = "id:org.wikipedia:id/page_list_item_title",
-        SEARCH_EMPTY_RESULT_ELEMENT = "xpath://*[@text='No results found']";
+    protected static String
+        SEARCH_INIT_ELEMENT,
+        SEARCH_INPUT,
+        SEARCH_CANCEL_BUTTON,
+        SEARCH_RESULT_BY_SUBSTRING_TPL,
+        SEARCH_RESULT_BY_TWO_SUBSTRING_TPL,
+        SEARCH_RESULT_ELEMENT,
+        SEARCH_ITEM_TITLE,
+        SEARCH_EMPTY_RESULT_ELEMENT;
 
     public SearchPageObject(AppiumDriver driver)
     {
@@ -112,11 +113,18 @@ public class SearchPageObject extends MainPageObject {
                 "There is no results by '" + request + "",
                 5);
 
-        List<WebElement> page_list_item_container = driver.findElementsByXPath(SEARCH_RESULT_ELEMENT);
+        By by = this.getLocatorByString(SEARCH_RESULT_ELEMENT);
+        List<WebElement> page_list_item_container = driver.findElements(by);
 
         String title_element;
         for (WebElement el: page_list_item_container) {
-            title_element = el.findElement(By.id(SEARCH_ITEM_TITLE)).getAttribute("text");
+            By by_el = this.getLocatorByString(SEARCH_ITEM_TITLE);
+
+            if (Platform.getInstance().isAndroid()) {
+                title_element = el.findElement(by_el).getAttribute("text");
+            } else {
+                title_element = el.findElement(by_el).getAttribute("name");
+            }
 
             if (title_element.toLowerCase().contains(request.toLowerCase())) {
                 continue;
