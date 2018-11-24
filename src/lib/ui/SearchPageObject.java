@@ -13,6 +13,7 @@ abstract public class SearchPageObject extends MainPageObject {
         SEARCH_INIT_ELEMENT,
         SEARCH_INPUT,
         SEARCH_CANCEL_BUTTON,
+        SEARCH_CLEAR_BUTTON,
         SEARCH_RESULT_BY_SUBSTRING_TPL,
         SEARCH_RESULT_BY_TWO_SUBSTRING_TPL,
         SEARCH_RESULT_ELEMENT,
@@ -63,6 +64,20 @@ abstract public class SearchPageObject extends MainPageObject {
         this.waitForElementNotPresent(SEARCH_CANCEL_BUTTON, "Search cancel button is still present", 10);
     }
 
+    public void clearSearchInput()
+    {
+        this.waitForElementPresent(
+                SEARCH_CLEAR_BUTTON,
+                "Cannot find button to clear search input",
+                20
+        );
+        this.waitForElementAndClick(
+                SEARCH_CLEAR_BUTTON,
+                "Cannot click button to clear search input",
+                20
+        );
+    }
+
     public void clickCancelSearch()
     {
         this.waitForElementAndClick(SEARCH_CANCEL_BUTTON, "Cannot find and click search cancel button", 10);
@@ -110,7 +125,7 @@ abstract public class SearchPageObject extends MainPageObject {
     {
         this.waitForElementPresent(
                 SEARCH_RESULT_ELEMENT,
-                "There is no results by '" + request + "",
+                "There is no results by '" + request + "'",
                 5);
 
         By by = this.getLocatorByString(SEARCH_RESULT_ELEMENT);

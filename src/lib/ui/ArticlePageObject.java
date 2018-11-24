@@ -74,9 +74,14 @@ abstract public class ArticlePageObject extends MainPageObject {
 
     public void addArticleToMyList(String name_of_folder)
     {
-        this.waitForElementAndClick(
+        this.waitForElementPresent(
                 OPTIONS_BUTTON,
                 "Cannot find button to open article options",
+                30
+        );
+        this.waitForElementAndClick(
+                OPTIONS_BUTTON,
+                "Cannot click button to open article options",
                 30
         );
 
@@ -155,9 +160,15 @@ abstract public class ArticlePageObject extends MainPageObject {
 
     public void closeArticle()
     {
+        this.waitForElementPresent(
+                CLOSE_ARTICLE_BUTTON,
+                "Cannot find X button",
+                20
+        );
+
         this.waitForElementAndClick(
                 CLOSE_ARTICLE_BUTTON,
-                "Cannot close article, cannot find X button",
+                "Cannot close article, cannot click X button",
                 20
         );
     }

@@ -1,13 +1,20 @@
 package lib.ui;
 
+import com.sun.tools.internal.ws.wsdl.document.soap.SOAPUse;
 import io.appium.java_client.AppiumDriver;
 import lib.Platform;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
+import java.util.List;
 
 abstract public class MyListsPageObject extends MainPageObject {
     protected static String
         FOLDER_ELEMENT,
         FOLDER_BY_NAME_TPL,
-        ARTICLE_BY_TITLE_TPL;
+        ARTICLE_BY_TITLE_TPL,
+        ARTICLE_ELEMENT,
+        ARTICLE_ITEM_TITLE;
 
     /* TEMPLATE METHODS */
     private static String getFolderXPathByName(String name_of_folder)
@@ -88,5 +95,34 @@ abstract public class MyListsPageObject extends MainPageObject {
                 article_xpath,
                 "Cannot find and click article by title '" + article_title + "' in MyLists",
                 20);
+    }
+
+    public void assertExistArticleTitleContainsSubstring(String substring)
+    {
+        this.waitForElementPresent(
+                ARTICLE_ELEMENT,
+                "There is no saved elements",
+                5);
+
+        By by = this.getLocatorByString(ARTICLE_ELEMENT);
+        List<WebElement> page_list_item_container = driver.findElements(by);
+
+        String title_element;
+        for (WebElement el: page_list_item_container) {
+
+            if (Platform.getInstance().isAndroid()) {
+                By by_el = this.getLocatorByString(ARTICLE_ITEM_TITLE);
+                title_element = el.findElement(by_el).getAttribute("text");
+            } else {
+                By by_el = this.getLocatorByString(ARTICLE_ELEMENT);
+                title_element = el.findElement(by_el).getAttribute("name");
+            }
+
+            if (title_element.toLowerCase().contains(substring.toLowerCase())) {
+                continue;
+            } else {
+                this.assertFail("Article without '" + substring + "'" + " in title was found in search results.");
+            }
+        }
     }
 }

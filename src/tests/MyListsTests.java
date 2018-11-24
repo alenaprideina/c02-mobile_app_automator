@@ -52,47 +52,52 @@ public class MyListsTests extends CoreTestCase
         MyListsPageObject.swipeByArticleToDelete(article_title);
     }
 
-    // Ex11: Рефакторинг тестов
     @Test
     public void testSaveTwoArticlesAndDeleteOneOfThem()
     {
-        SearchPageObject SearchPageObject = SearchPageObjectFactory.get(driver);
+        String name_of_folder = "My first folder";
 
+        SearchPageObject SearchPageObject = SearchPageObjectFactory.get(driver);
         SearchPageObject.initSearchInput();
-        String request = "Java";
-        SearchPageObject.typeSearchLine(request);
+        SearchPageObject.typeSearchLine("Java");
         SearchPageObject.clickByArticleWithSubstring("Object-oriented programming language");
 
         ArticlePageObject ArticlePageObject = ArticlePageObjectFactory.get(driver);
-        String title_first = ArticlePageObject.getArticleTitle();
 
-        String name_of_folder = "My first folder";
-        ArticlePageObject.addArticleToMyList(name_of_folder);
+        if (Platform.getInstance().isAndroid()) {
+            ArticlePageObject.addArticleToMyList(name_of_folder);
+        } else {
+            ArticlePageObject.addArticleToMySaved();
+            ArticlePageObject.closeTipForSaved();
+        }
         ArticlePageObject.closeArticle();
 
         SearchPageObject.initSearchInput();
-        request = "Junit";
-        SearchPageObject.typeSearchLine(request);
-        SearchPageObject.clickByArticleWithSubstring("Unit testing library for Java");
 
-        String title_second = ArticlePageObject.getArticleTitle();
-        ArticlePageObject.addArticleToMyExistList(name_of_folder);
+        if (Platform.getInstance().isIOS()) {
+            SearchPageObject.clearSearchInput();
+        }
+
+        SearchPageObject.typeSearchLine("Singleton pattern");
+        SearchPageObject.clickByArticleWithSubstring("Design pattern in object-oriented software development");
+
+        if (Platform.getInstance().isAndroid()) {
+            ArticlePageObject.addArticleToMyExistList(name_of_folder);
+        } else {
+            ArticlePageObject.addArticleToMySaved();
+        }
         ArticlePageObject.closeArticle();
 
         NavigationUI NavigationUI = NavigationUIFactory.get(driver);
         NavigationUI.clickMyLists();
 
         MyListsPageObject MyListsPageObject = MyListsPageObjectFactory.get(driver);
-        MyListsPageObject.openFolderByName(name_of_folder);
-        MyListsPageObject.swipeByArticleToDelete(title_second);
-        MyListsPageObject.openArticleByTitle(title_first);
 
-        String title_article = ArticlePageObject.getArticleTitle();
+        if (Platform.getInstance().isAndroid()) {
+            MyListsPageObject.openFolderByName(name_of_folder);
+        }
 
-        assertEquals(
-                "Article title is not match in Mylists and in Article",
-                title_first,
-                title_article
-        );
+        MyListsPageObject.swipeByArticleToDelete("Java");
+        MyListsPageObject.assertExistArticleTitleContainsSubstring("Singleton pattern");
     }
 }
