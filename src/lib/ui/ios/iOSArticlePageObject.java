@@ -3,8 +3,8 @@ package lib.ui.ios;
 import io.appium.java_client.AppiumDriver;
 import lib.ui.ArticlePageObject;
 
-public class iOSArticlePageObject extends ArticlePageObject {
-
+public class iOSArticlePageObject extends ArticlePageObject
+{
     static {
         TITLE = "id:Singleton pattern";
         FOOTER_ELEMENT = "id:View article in browser";

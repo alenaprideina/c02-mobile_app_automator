@@ -7,8 +7,8 @@ import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
-abstract public class SearchPageObject extends MainPageObject {
-
+abstract public class SearchPageObject extends MainPageObject
+{
     protected static String
         SEARCH_INIT_ELEMENT,
         SEARCH_INPUT,
