@@ -1,3 +1,6 @@
+lib/ui/mobile_web/MWMyListsPageObject.class
+lib/ui/mobile_web/MWNavigationUI.class
+lib/ui/AuthorizationPageObject.class
 tests/ArticleTests.class
 suites/TestSuite.class
 lib/ui/NavigationUI.class

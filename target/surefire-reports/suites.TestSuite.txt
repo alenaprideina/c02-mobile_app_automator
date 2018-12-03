@@ -1,11 +1,11 @@
 -------------------------------------------------------------------------------
 Test set: suites.TestSuite
 -------------------------------------------------------------------------------
-Tests run: 16, Failures: 0, Errors: 16, Skipped: 0, Time elapsed: 3.077 sec <<< FAILURE!
-testCompareArticleTitle(tests.ArticleTests)  Time elapsed: 2.915 sec  <<< ERROR!
+Tests run: 16, Failures: 0, Errors: 16, Skipped: 0, Time elapsed: 3.068 sec <<< FAILURE!
+testCompareArticleTitle(tests.ArticleTests)  Time elapsed: 2.852 sec  <<< ERROR!
 org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
 Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'MBP-Alena', ip: '192.168.0.10', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_161'
+System info: host: 'MBP-Alena.Dlink', ip: '192.168.0.71', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_161'
 Driver info: driver.version: IOSDriver
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
 	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
@@ -18,8 +18,8 @@ Driver info: driver.version: IOSDriver
 	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:114)
 	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:132)
 	at io.appium.java_client.ios.IOSDriver.<init>(IOSDriver.java:82)
-	at lib.Platform.getDriver(Platform.java:34)
-	at lib.CoreTestCase.setUp(CoreTestCase.java:16)
+	at lib.Platform.getDriver(Platform.java:39)
+	at lib.CoreTestCase.setUp(CoreTestCase.java:17)
 	at junit.framework.TestCase.runBare(TestCase.java:139)
 	at junit.framework.TestResult$1.protect(TestResult.java:122)
 	at junit.framework.TestResult.runProtected(TestResult.java:142)
@@ -50,7 +50,7 @@ Driver info: driver.version: IOSDriver
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 Caused by: org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:4723 [/127.0.0.1] failed: Connection refused (Connection refused)
 Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'MBP-Alena', ip: '192.168.0.10', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_161'
+System info: host: 'MBP-Alena.Dlink', ip: '192.168.0.71', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_161'
 Driver info: driver.version: IOSDriver
 	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:84)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
@@ -82,10 +82,10 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
 	... 54 more
 
-testSwipeArticle(tests.ArticleTests)  Time elapsed: 0.003 sec  <<< ERROR!
+testSwipeArticle(tests.ArticleTests)  Time elapsed: 0.007 sec  <<< ERROR!
 org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
 Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'MBP-Alena', ip: '192.168.0.10', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_161'
+System info: host: 'MBP-Alena.Dlink', ip: '192.168.0.71', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_161'
 Driver info: driver.version: IOSDriver
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
 	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
@@ -98,8 +98,8 @@ Driver info: driver.version: IOSDriver
 	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:114)
 	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:132)
 	at io.appium.java_client.ios.IOSDriver.<init>(IOSDriver.java:82)
-	at lib.Platform.getDriver(Platform.java:34)
-	at lib.CoreTestCase.setUp(CoreTestCase.java:16)
+	at lib.Platform.getDriver(Platform.java:39)
+	at lib.CoreTestCase.setUp(CoreTestCase.java:17)
 	at junit.framework.TestCase.runBare(TestCase.java:139)
 	at junit.framework.TestResult$1.protect(TestResult.java:122)
 	at junit.framework.TestResult.runProtected(TestResult.java:142)
@@ -130,7 +130,7 @@ Driver info: driver.version: IOSDriver
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 Caused by: org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:4723 [/127.0.0.1] failed: Connection refused (Connection refused)
 Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'MBP-Alena', ip: '192.168.0.10', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_161'
+System info: host: 'MBP-Alena.Dlink', ip: '192.168.0.71', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_161'
 Driver info: driver.version: IOSDriver
 	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:84)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
@@ -165,7 +165,7 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 testArticleTitlePresent(tests.ArticleTests)  Time elapsed: 0.006 sec  <<< ERROR!
 org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
 Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'MBP-Alena', ip: '192.168.0.10', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_161'
+System info: host: 'MBP-Alena.Dlink', ip: '192.168.0.71', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_161'
 Driver info: driver.version: IOSDriver
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
 	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
@@ -178,8 +178,8 @@ Driver info: driver.version: IOSDriver
 	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:114)
 	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:132)
 	at io.appium.java_client.ios.IOSDriver.<init>(IOSDriver.java:82)
-	at lib.Platform.getDriver(Platform.java:34)
-	at lib.CoreTestCase.setUp(CoreTestCase.java:16)
+	at lib.Platform.getDriver(Platform.java:39)
+	at lib.CoreTestCase.setUp(CoreTestCase.java:17)
 	at junit.framework.TestCase.runBare(TestCase.java:139)
 	at junit.framework.TestResult$1.protect(TestResult.java:122)
 	at junit.framework.TestResult.runProtected(TestResult.java:142)
@@ -210,7 +210,7 @@ Driver info: driver.version: IOSDriver
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 Caused by: org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:4723 [/127.0.0.1] failed: Connection refused (Connection refused)
 Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'MBP-Alena', ip: '192.168.0.10', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_161'
+System info: host: 'MBP-Alena.Dlink', ip: '192.168.0.71', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_161'
 Driver info: driver.version: IOSDriver
 	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:84)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
@@ -245,7 +245,7 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 testChangeScreenOrientationOnSearchResults(tests.ChangeConditionTests)  Time elapsed: 0.007 sec  <<< ERROR!
 org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
 Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'MBP-Alena', ip: '192.168.0.10', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_161'
+System info: host: 'MBP-Alena.Dlink', ip: '192.168.0.71', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_161'
 Driver info: driver.version: IOSDriver
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
 	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
@@ -258,8 +258,8 @@ Driver info: driver.version: IOSDriver
 	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:114)
 	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:132)
 	at io.appium.java_client.ios.IOSDriver.<init>(IOSDriver.java:82)
-	at lib.Platform.getDriver(Platform.java:34)
-	at lib.CoreTestCase.setUp(CoreTestCase.java:16)
+	at lib.Platform.getDriver(Platform.java:39)
+	at lib.CoreTestCase.setUp(CoreTestCase.java:17)
 	at junit.framework.TestCase.runBare(TestCase.java:139)
 	at junit.framework.TestResult$1.protect(TestResult.java:122)
 	at junit.framework.TestResult.runProtected(TestResult.java:142)
@@ -290,7 +290,7 @@ Driver info: driver.version: IOSDriver
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 Caused by: org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:4723 [/127.0.0.1] failed: Connection refused (Connection refused)
 Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'MBP-Alena', ip: '192.168.0.10', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_161'
+System info: host: 'MBP-Alena.Dlink', ip: '192.168.0.71', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_161'
 Driver info: driver.version: IOSDriver
 	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:84)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
@@ -322,10 +322,10 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
 	... 54 more
 
-testCheckSearchArticleInBackground(tests.ChangeConditionTests)  Time elapsed: 0.009 sec  <<< ERROR!
+testCheckSearchArticleInBackground(tests.ChangeConditionTests)  Time elapsed: 0.006 sec  <<< ERROR!
 org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
 Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'MBP-Alena', ip: '192.168.0.10', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_161'
+System info: host: 'MBP-Alena.Dlink', ip: '192.168.0.71', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_161'
 Driver info: driver.version: IOSDriver
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
 	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
@@ -338,8 +338,8 @@ Driver info: driver.version: IOSDriver
 	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:114)
 	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:132)
 	at io.appium.java_client.ios.IOSDriver.<init>(IOSDriver.java:82)
-	at lib.Platform.getDriver(Platform.java:34)
-	at lib.CoreTestCase.setUp(CoreTestCase.java:16)
+	at lib.Platform.getDriver(Platform.java:39)
+	at lib.CoreTestCase.setUp(CoreTestCase.java:17)
 	at junit.framework.TestCase.runBare(TestCase.java:139)
 	at junit.framework.TestResult$1.protect(TestResult.java:122)
 	at junit.framework.TestResult.runProtected(TestResult.java:142)
@@ -370,7 +370,7 @@ Driver info: driver.version: IOSDriver
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 Caused by: org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:4723 [/127.0.0.1] failed: Connection refused (Connection refused)
 Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'MBP-Alena', ip: '192.168.0.10', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_161'
+System info: host: 'MBP-Alena.Dlink', ip: '192.168.0.71', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_161'
 Driver info: driver.version: IOSDriver
 	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:84)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
@@ -402,10 +402,10 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
 	... 54 more
 
-testPassThroughWelcome(tests.GetStartedTest)  Time elapsed: 0.002 sec  <<< ERROR!
+testPassThroughWelcome(tests.GetStartedTest)  Time elapsed: 0.008 sec  <<< ERROR!
 org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
 Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'MBP-Alena', ip: '192.168.0.10', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_161'
+System info: host: 'MBP-Alena.Dlink', ip: '192.168.0.71', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_161'
 Driver info: driver.version: IOSDriver
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
 	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
@@ -418,8 +418,8 @@ Driver info: driver.version: IOSDriver
 	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:114)
 	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:132)
 	at io.appium.java_client.ios.IOSDriver.<init>(IOSDriver.java:82)
-	at lib.Platform.getDriver(Platform.java:34)
-	at lib.CoreTestCase.setUp(CoreTestCase.java:16)
+	at lib.Platform.getDriver(Platform.java:39)
+	at lib.CoreTestCase.setUp(CoreTestCase.java:17)
 	at junit.framework.TestCase.runBare(TestCase.java:139)
 	at junit.framework.TestResult$1.protect(TestResult.java:122)
 	at junit.framework.TestResult.runProtected(TestResult.java:142)
@@ -450,7 +450,7 @@ Driver info: driver.version: IOSDriver
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 Caused by: org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:4723 [/127.0.0.1] failed: Connection refused (Connection refused)
 Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'MBP-Alena', ip: '192.168.0.10', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_161'
+System info: host: 'MBP-Alena.Dlink', ip: '192.168.0.71', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_161'
 Driver info: driver.version: IOSDriver
 	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:84)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
@@ -482,10 +482,10 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
 	... 54 more
 
-testSaveFirstArticleToMyList(tests.MyListsTests)  Time elapsed: 0.007 sec  <<< ERROR!
+testSaveFirstArticleToMyList(tests.MyListsTests)  Time elapsed: 0.001 sec  <<< ERROR!
 org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
 Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'MBP-Alena', ip: '192.168.0.10', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_161'
+System info: host: 'MBP-Alena.Dlink', ip: '192.168.0.71', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_161'
 Driver info: driver.version: IOSDriver
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
 	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
@@ -498,8 +498,8 @@ Driver info: driver.version: IOSDriver
 	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:114)
 	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:132)
 	at io.appium.java_client.ios.IOSDriver.<init>(IOSDriver.java:82)
-	at lib.Platform.getDriver(Platform.java:34)
-	at lib.CoreTestCase.setUp(CoreTestCase.java:16)
+	at lib.Platform.getDriver(Platform.java:39)
+	at lib.CoreTestCase.setUp(CoreTestCase.java:17)
 	at junit.framework.TestCase.runBare(TestCase.java:139)
 	at junit.framework.TestResult$1.protect(TestResult.java:122)
 	at junit.framework.TestResult.runProtected(TestResult.java:142)
@@ -530,7 +530,7 @@ Driver info: driver.version: IOSDriver
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 Caused by: org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:4723 [/127.0.0.1] failed: Connection refused (Connection refused)
 Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'MBP-Alena', ip: '192.168.0.10', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_161'
+System info: host: 'MBP-Alena.Dlink', ip: '192.168.0.71', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_161'
 Driver info: driver.version: IOSDriver
 	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:84)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
@@ -562,10 +562,10 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
 	... 54 more
 
-testSaveTwoArticlesAndDeleteOneOfThem(tests.MyListsTests)  Time elapsed: 0.002 sec  <<< ERROR!
+testSaveTwoArticlesAndDeleteOneOfThem(tests.MyListsTests)  Time elapsed: 0.006 sec  <<< ERROR!
 org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
 Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'MBP-Alena', ip: '192.168.0.10', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_161'
+System info: host: 'MBP-Alena.Dlink', ip: '192.168.0.71', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_161'
 Driver info: driver.version: IOSDriver
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
 	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
@@ -578,8 +578,8 @@ Driver info: driver.version: IOSDriver
 	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:114)
 	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:132)
 	at io.appium.java_client.ios.IOSDriver.<init>(IOSDriver.java:82)
-	at lib.Platform.getDriver(Platform.java:34)
-	at lib.CoreTestCase.setUp(CoreTestCase.java:16)
+	at lib.Platform.getDriver(Platform.java:39)
+	at lib.CoreTestCase.setUp(CoreTestCase.java:17)
 	at junit.framework.TestCase.runBare(TestCase.java:139)
 	at junit.framework.TestResult$1.protect(TestResult.java:122)
 	at junit.framework.TestResult.runProtected(TestResult.java:142)
@@ -610,7 +610,7 @@ Driver info: driver.version: IOSDriver
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 Caused by: org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:4723 [/127.0.0.1] failed: Connection refused (Connection refused)
 Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'MBP-Alena', ip: '192.168.0.10', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_161'
+System info: host: 'MBP-Alena.Dlink', ip: '192.168.0.71', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_161'
 Driver info: driver.version: IOSDriver
 	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:84)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
@@ -642,10 +642,10 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
 	... 54 more
 
-testAmountOfNotEmptySearch(tests.SearchTests)  Time elapsed: 0.006 sec  <<< ERROR!
+testAmountOfNotEmptySearch(tests.SearchTests)  Time elapsed: 0.005 sec  <<< ERROR!
 org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
 Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'MBP-Alena', ip: '192.168.0.10', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_161'
+System info: host: 'MBP-Alena.Dlink', ip: '192.168.0.71', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_161'
 Driver info: driver.version: IOSDriver
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
 	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
@@ -658,8 +658,8 @@ Driver info: driver.version: IOSDriver
 	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:114)
 	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:132)
 	at io.appium.java_client.ios.IOSDriver.<init>(IOSDriver.java:82)
-	at lib.Platform.getDriver(Platform.java:34)
-	at lib.CoreTestCase.setUp(CoreTestCase.java:16)
+	at lib.Platform.getDriver(Platform.java:39)
+	at lib.CoreTestCase.setUp(CoreTestCase.java:17)
 	at junit.framework.TestCase.runBare(TestCase.java:139)
 	at junit.framework.TestResult$1.protect(TestResult.java:122)
 	at junit.framework.TestResult.runProtected(TestResult.java:142)
@@ -690,7 +690,7 @@ Driver info: driver.version: IOSDriver
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 Caused by: org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:4723 [/127.0.0.1] failed: Connection refused (Connection refused)
 Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'MBP-Alena', ip: '192.168.0.10', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_161'
+System info: host: 'MBP-Alena.Dlink', ip: '192.168.0.71', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_161'
 Driver info: driver.version: IOSDriver
 	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:84)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
@@ -722,10 +722,10 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
 	... 54 more
 
-testAmountOfEmptySearch(tests.SearchTests)  Time elapsed: 0.003 sec  <<< ERROR!
+testAmountOfEmptySearch(tests.SearchTests)  Time elapsed: 0.004 sec  <<< ERROR!
 org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
 Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'MBP-Alena', ip: '192.168.0.10', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_161'
+System info: host: 'MBP-Alena.Dlink', ip: '192.168.0.71', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_161'
 Driver info: driver.version: IOSDriver
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
 	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
@@ -738,8 +738,8 @@ Driver info: driver.version: IOSDriver
 	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:114)
 	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:132)
 	at io.appium.java_client.ios.IOSDriver.<init>(IOSDriver.java:82)
-	at lib.Platform.getDriver(Platform.java:34)
-	at lib.CoreTestCase.setUp(CoreTestCase.java:16)
+	at lib.Platform.getDriver(Platform.java:39)
+	at lib.CoreTestCase.setUp(CoreTestCase.java:17)
 	at junit.framework.TestCase.runBare(TestCase.java:139)
 	at junit.framework.TestResult$1.protect(TestResult.java:122)
 	at junit.framework.TestResult.runProtected(TestResult.java:142)
@@ -770,7 +770,7 @@ Driver info: driver.version: IOSDriver
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 Caused by: org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:4723 [/127.0.0.1] failed: Connection refused (Connection refused)
 Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'MBP-Alena', ip: '192.168.0.10', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_161'
+System info: host: 'MBP-Alena.Dlink', ip: '192.168.0.71', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_161'
 Driver info: driver.version: IOSDriver
 	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:84)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
@@ -802,10 +802,10 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
 	... 54 more
 
-testSearchResultMatchTitleAndDesc(tests.SearchTests)  Time elapsed: 0.007 sec  <<< ERROR!
+testSearchResultMatchTitleAndDesc(tests.SearchTests)  Time elapsed: 0.006 sec  <<< ERROR!
 org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
 Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'MBP-Alena', ip: '192.168.0.10', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_161'
+System info: host: 'MBP-Alena.Dlink', ip: '192.168.0.71', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_161'
 Driver info: driver.version: IOSDriver
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
 	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
@@ -818,8 +818,8 @@ Driver info: driver.version: IOSDriver
 	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:114)
 	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:132)
 	at io.appium.java_client.ios.IOSDriver.<init>(IOSDriver.java:82)
-	at lib.Platform.getDriver(Platform.java:34)
-	at lib.CoreTestCase.setUp(CoreTestCase.java:16)
+	at lib.Platform.getDriver(Platform.java:39)
+	at lib.CoreTestCase.setUp(CoreTestCase.java:17)
 	at junit.framework.TestCase.runBare(TestCase.java:139)
 	at junit.framework.TestResult$1.protect(TestResult.java:122)
 	at junit.framework.TestResult.runProtected(TestResult.java:142)
@@ -850,7 +850,7 @@ Driver info: driver.version: IOSDriver
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 Caused by: org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:4723 [/127.0.0.1] failed: Connection refused (Connection refused)
 Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'MBP-Alena', ip: '192.168.0.10', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_161'
+System info: host: 'MBP-Alena.Dlink', ip: '192.168.0.71', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_161'
 Driver info: driver.version: IOSDriver
 	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:84)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
@@ -885,7 +885,7 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 testCancelSearch(tests.SearchTests)  Time elapsed: 0.004 sec  <<< ERROR!
 org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
 Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'MBP-Alena', ip: '192.168.0.10', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_161'
+System info: host: 'MBP-Alena.Dlink', ip: '192.168.0.71', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_161'
 Driver info: driver.version: IOSDriver
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
 	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
@@ -898,8 +898,8 @@ Driver info: driver.version: IOSDriver
 	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:114)
 	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:132)
 	at io.appium.java_client.ios.IOSDriver.<init>(IOSDriver.java:82)
-	at lib.Platform.getDriver(Platform.java:34)
-	at lib.CoreTestCase.setUp(CoreTestCase.java:16)
+	at lib.Platform.getDriver(Platform.java:39)
+	at lib.CoreTestCase.setUp(CoreTestCase.java:17)
 	at junit.framework.TestCase.runBare(TestCase.java:139)
 	at junit.framework.TestResult$1.protect(TestResult.java:122)
 	at junit.framework.TestResult.runProtected(TestResult.java:142)
@@ -930,7 +930,7 @@ Driver info: driver.version: IOSDriver
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 Caused by: org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:4723 [/127.0.0.1] failed: Connection refused (Connection refused)
 Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'MBP-Alena', ip: '192.168.0.10', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_161'
+System info: host: 'MBP-Alena.Dlink', ip: '192.168.0.71', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_161'
 Driver info: driver.version: IOSDriver
 	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:84)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
@@ -962,10 +962,10 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
 	... 54 more
 
-testSearchResultMatch(tests.SearchTests)  Time elapsed: 0.004 sec  <<< ERROR!
+testSearchResultMatch(tests.SearchTests)  Time elapsed: 0.003 sec  <<< ERROR!
 org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
 Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'MBP-Alena', ip: '192.168.0.10', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_161'
+System info: host: 'MBP-Alena.Dlink', ip: '192.168.0.71', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_161'
 Driver info: driver.version: IOSDriver
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
 	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
@@ -978,8 +978,8 @@ Driver info: driver.version: IOSDriver
 	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:114)
 	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:132)
 	at io.appium.java_client.ios.IOSDriver.<init>(IOSDriver.java:82)
-	at lib.Platform.getDriver(Platform.java:34)
-	at lib.CoreTestCase.setUp(CoreTestCase.java:16)
+	at lib.Platform.getDriver(Platform.java:39)
+	at lib.CoreTestCase.setUp(CoreTestCase.java:17)
 	at junit.framework.TestCase.runBare(TestCase.java:139)
 	at junit.framework.TestResult$1.protect(TestResult.java:122)
 	at junit.framework.TestResult.runProtected(TestResult.java:142)
@@ -1010,7 +1010,7 @@ Driver info: driver.version: IOSDriver
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 Caused by: org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:4723 [/127.0.0.1] failed: Connection refused (Connection refused)
 Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'MBP-Alena', ip: '192.168.0.10', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_161'
+System info: host: 'MBP-Alena.Dlink', ip: '192.168.0.71', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_161'
 Driver info: driver.version: IOSDriver
 	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:84)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
@@ -1042,10 +1042,10 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
 	... 54 more
 
-testCancelSearchResults(tests.SearchTests)  Time elapsed: 0 sec  <<< ERROR!
+testCancelSearchResults(tests.SearchTests)  Time elapsed: 0.013 sec  <<< ERROR!
 org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
 Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'MBP-Alena', ip: '192.168.0.10', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_161'
+System info: host: 'MBP-Alena.Dlink', ip: '192.168.0.71', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_161'
 Driver info: driver.version: IOSDriver
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
 	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
@@ -1058,8 +1058,8 @@ Driver info: driver.version: IOSDriver
 	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:114)
 	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:132)
 	at io.appium.java_client.ios.IOSDriver.<init>(IOSDriver.java:82)
-	at lib.Platform.getDriver(Platform.java:34)
-	at lib.CoreTestCase.setUp(CoreTestCase.java:16)
+	at lib.Platform.getDriver(Platform.java:39)
+	at lib.CoreTestCase.setUp(CoreTestCase.java:17)
 	at junit.framework.TestCase.runBare(TestCase.java:139)
 	at junit.framework.TestResult$1.protect(TestResult.java:122)
 	at junit.framework.TestResult.runProtected(TestResult.java:142)
@@ -1090,7 +1090,7 @@ Driver info: driver.version: IOSDriver
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 Caused by: org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:4723 [/127.0.0.1] failed: Connection refused (Connection refused)
 Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'MBP-Alena', ip: '192.168.0.10', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_161'
+System info: host: 'MBP-Alena.Dlink', ip: '192.168.0.71', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_161'
 Driver info: driver.version: IOSDriver
 	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:84)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
@@ -1122,10 +1122,10 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
 	... 54 more
 
-testPlaceholderInSearchInput(tests.SearchTests)  Time elapsed: 0.011 sec  <<< ERROR!
+testPlaceholderInSearchInput(tests.SearchTests)  Time elapsed: 0.007 sec  <<< ERROR!
 org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
 Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'MBP-Alena', ip: '192.168.0.10', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_161'
+System info: host: 'MBP-Alena.Dlink', ip: '192.168.0.71', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_161'
 Driver info: driver.version: IOSDriver
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
 	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
@@ -1138,8 +1138,8 @@ Driver info: driver.version: IOSDriver
 	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:114)
 	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:132)
 	at io.appium.java_client.ios.IOSDriver.<init>(IOSDriver.java:82)
-	at lib.Platform.getDriver(Platform.java:34)
-	at lib.CoreTestCase.setUp(CoreTestCase.java:16)
+	at lib.Platform.getDriver(Platform.java:39)
+	at lib.CoreTestCase.setUp(CoreTestCase.java:17)
 	at junit.framework.TestCase.runBare(TestCase.java:139)
 	at junit.framework.TestResult$1.protect(TestResult.java:122)
 	at junit.framework.TestResult.runProtected(TestResult.java:142)
@@ -1170,7 +1170,7 @@ Driver info: driver.version: IOSDriver
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 Caused by: org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:4723 [/127.0.0.1] failed: Connection refused (Connection refused)
 Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'MBP-Alena', ip: '192.168.0.10', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_161'
+System info: host: 'MBP-Alena.Dlink', ip: '192.168.0.71', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_161'
 Driver info: driver.version: IOSDriver
 	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:84)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
@@ -1202,10 +1202,10 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
 	... 54 more
 
-testSearch(tests.SearchTests)  Time elapsed: 0 sec  <<< ERROR!
+testSearch(tests.SearchTests)  Time elapsed: 0.004 sec  <<< ERROR!
 org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
 Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'MBP-Alena', ip: '192.168.0.10', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_161'
+System info: host: 'MBP-Alena.Dlink', ip: '192.168.0.71', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_161'
 Driver info: driver.version: IOSDriver
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
 	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
@@ -1218,8 +1218,8 @@ Driver info: driver.version: IOSDriver
 	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:114)
 	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:132)
 	at io.appium.java_client.ios.IOSDriver.<init>(IOSDriver.java:82)
-	at lib.Platform.getDriver(Platform.java:34)
-	at lib.CoreTestCase.setUp(CoreTestCase.java:16)
+	at lib.Platform.getDriver(Platform.java:39)
+	at lib.CoreTestCase.setUp(CoreTestCase.java:17)
 	at junit.framework.TestCase.runBare(TestCase.java:139)
 	at junit.framework.TestResult$1.protect(TestResult.java:122)
 	at junit.framework.TestResult.runProtected(TestResult.java:142)
@@ -1250,7 +1250,7 @@ Driver info: driver.version: IOSDriver
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 Caused by: org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:4723 [/127.0.0.1] failed: Connection refused (Connection refused)
 Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'MBP-Alena', ip: '192.168.0.10', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_161'
+System info: host: 'MBP-Alena.Dlink', ip: '192.168.0.71', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_161'
 Driver info: driver.version: IOSDriver
 	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:84)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)

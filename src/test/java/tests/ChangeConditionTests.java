@@ -1,6 +1,7 @@
 package tests;
 
 import lib.CoreTestCase;
+import lib.Platform;
 import lib.ui.ArticlePageObject;
 import lib.ui.SearchPageObject;
 import lib.ui.factories.ArticlePageObjectFactory;
@@ -12,6 +13,9 @@ public class ChangeConditionTests extends CoreTestCase {
     @Test
     public void testChangeScreenOrientationOnSearchResults()
     {
+        if (Platform.getInstance().isMW()) {
+            return;
+        }
         this.skipWelcomePageForIOSApp();
 
         String request = "Singleton pattern";
@@ -49,6 +53,9 @@ public class ChangeConditionTests extends CoreTestCase {
     @Test
     public void testCheckSearchArticleInBackground()
     {
+        if (Platform.getInstance().isMW()) {
+            return;
+        }
         this.skipWelcomePageForIOSApp();
 
         String request = "Singleton pattern";

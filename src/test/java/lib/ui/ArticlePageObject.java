@@ -1,9 +1,9 @@
 package lib.ui;
 
-import io.appium.java_client.AppiumDriver;
 import org.openqa.selenium.WebElement;
 
 import lib.Platform;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 abstract public class ArticlePageObject extends MainPageObject {
 
@@ -13,6 +13,7 @@ abstract public class ArticlePageObject extends MainPageObject {
         OPTIONS_BUTTON,
         OPTIONS_LIST,
         OPTIONS_ADD_TO_MY_LIST_BUTTON,
+        OPTIONS_REMOVE_FROM_MY_LIST_BUTTON,
         ADD_TO_MY_LIST_OVERLAY,
         MY_LIST_NAME_INPUT,
         MY_LIST_OK_BUTTON,
@@ -20,7 +21,7 @@ abstract public class ArticlePageObject extends MainPageObject {
         CLOSE_ARTICLE_BUTTON,
         TIP_FOR_SAVED;
 
-    public ArticlePageObject(AppiumDriver driver)
+    public ArticlePageObject(RemoteWebDriver driver)
     {
         super(driver);
     }
@@ -45,8 +46,10 @@ abstract public class ArticlePageObject extends MainPageObject {
         WebElement title_element = waitForTitleElement();
         if (Platform.getInstance().isAndroid()) {
             return title_element.getAttribute("text");
-        } else {
+        } else if (Platform.getInstance().isIOS()){
             return title_element.getAttribute("name");
+        } else {
+            return title_element.getText();
         }
     }
 
@@ -63,8 +66,10 @@ abstract public class ArticlePageObject extends MainPageObject {
     {
         if (Platform.getInstance().isAndroid()) {
             this.swipeUpToFindElement(FOOTER_ELEMENT,"Cannot find the end of article",40);
-        } else {
+        } else if (Platform.getInstance().isIOS()){
             this.swipeUpTillElementAppear(FOOTER_ELEMENT,"Cannot find the end of article",60);
+        } else {
+            this.scrollWebPageTillElementNotVisible(FOOTER_ELEMENT, "Cannot find the end of article", 40);
         }
     }
 
@@ -150,34 +155,66 @@ abstract public class ArticlePageObject extends MainPageObject {
 
     public void addArticleToMySaved()
     {
-        this.waitForElementAndClick(
+        if (Platform.getInstance().isMW()) {
+            this.removeArticleFromSavedIfItAdded();
+        }
+        this.waitForElementPresent(
                 OPTIONS_ADD_TO_MY_LIST_BUTTON,
                 "Cannot find option to add article to reading list",
                 20
         );
+        this.waitForElementAndClick(
+                OPTIONS_ADD_TO_MY_LIST_BUTTON,
+                "Cannot click option to add article to reading list",
+                20
+        );
+    }
+
+    public void removeArticleFromSavedIfItAdded()
+    {
+        if (this.isElementPresent(OPTIONS_REMOVE_FROM_MY_LIST_BUTTON)) {
+            this.waitForElementAndClick(
+                    OPTIONS_REMOVE_FROM_MY_LIST_BUTTON,
+                    "Cannot click button to remove an article from saved",
+                    20
+            );
+            this.waitForElementPresent(
+                    OPTIONS_ADD_TO_MY_LIST_BUTTON,
+                    "Cannot find button to add an article to saved list after removing it from saved list before",
+                    20
+            );
+        }
     }
 
     public void closeTipForSaved()
     {
-        this.waitForElementAndClick(
-                TIP_FOR_SAVED,
-                "Cannot find tip  add article to reading list",
-                20
-        );
+        if (Platform.getInstance().isIOS()) {
+            this.waitForElementAndClick(
+                    TIP_FOR_SAVED,
+                    "Cannot find tip add article to reading list",
+                    20
+            );
+        } else {
+            System.out.println("Method closeTipForSaved() does nothing for platform " + Platform.getInstance().getPlatformVar());
+        }
     }
 
     public void closeArticle()
     {
-        this.waitForElementPresent(
-                CLOSE_ARTICLE_BUTTON,
-                "Cannot find X button",
-                20
-        );
+        if (Platform.getInstance().isIOS() || Platform.getInstance().isAndroid()) {
+            this.waitForElementPresent(
+                    CLOSE_ARTICLE_BUTTON,
+                    "Cannot find X button",
+                    20
+            );
 
-        this.waitForElementAndClick(
-                CLOSE_ARTICLE_BUTTON,
-                "Cannot close article, cannot click X button",
-                20
-        );
+            this.waitForElementAndClick(
+                    CLOSE_ARTICLE_BUTTON,
+                    "Cannot close article, cannot click X button",
+                    20
+            );
+        } else {
+            System.out.println("Method closeArticle() does nothing for platform " + Platform.getInstance().getPlatformVar());
+        }
     }
 }

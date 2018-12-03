@@ -21,7 +21,7 @@ public class ArticleTests extends CoreTestCase {
 
         SearchPageObject.initSearchInput();
         SearchPageObject.typeSearchLine(request);
-        SearchPageObject.clickByArticleWithSubstring("Design pattern in object-oriented software development");
+        SearchPageObject.clickByArticleWithSubstring("esign pattern in object-oriented software development");
 
         ArticlePageObject ArticlePageObject = ArticlePageObjectFactory.get(driver);
         String article_title = ArticlePageObject.getArticleTitle();
@@ -33,7 +33,6 @@ public class ArticleTests extends CoreTestCase {
         );
     }
 
-    // для iOS порефакторить
     @Test
     public void testArticleTitlePresent()
     {
@@ -45,7 +44,7 @@ public class ArticleTests extends CoreTestCase {
         String request = "Singleton pattern";
         SearchPageObject.typeSearchLine(request);
 
-        SearchPageObject.clickByArticleWithSubstring("Design pattern in object-oriented software development");
+        SearchPageObject.clickByArticleWithSubstring("esign pattern in object-oriented software development");
 
         ArticlePageObject ArticlePageObject = ArticlePageObjectFactory.get(driver);
         ArticlePageObject.assertTitlePresent();
@@ -60,7 +59,7 @@ public class ArticleTests extends CoreTestCase {
 
         SearchPageObject.initSearchInput();
         SearchPageObject.typeSearchLine("Singleton pattern");
-        SearchPageObject.clickByArticleWithSubstring("Design pattern in object-oriented software development");
+        SearchPageObject.clickByArticleWithSubstring("esign pattern in object-oriented software development");
 
         ArticlePageObject ArticlePageObject = ArticlePageObjectFactory.get(driver);
         ArticlePageObject.waitForTitleElement();
