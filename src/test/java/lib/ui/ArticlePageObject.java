@@ -158,11 +158,8 @@ abstract public class ArticlePageObject extends MainPageObject {
         if (Platform.getInstance().isMW()) {
             this.removeArticleFromSavedIfItAdded();
         }
-        this.waitForElementPresent(
-                OPTIONS_ADD_TO_MY_LIST_BUTTON,
-                "Cannot find option to add article to reading list",
-                20
-        );
+
+        this.waitForElementPresent(OPTIONS_ADD_TO_MY_LIST_BUTTON,"Cannot find option to add article to reading list",20);
         this.waitForElementAndClick(
                 OPTIONS_ADD_TO_MY_LIST_BUTTON,
                 "Cannot click option to add article to reading list",
@@ -173,11 +170,9 @@ abstract public class ArticlePageObject extends MainPageObject {
     public void removeArticleFromSavedIfItAdded()
     {
         if (this.isElementPresent(OPTIONS_REMOVE_FROM_MY_LIST_BUTTON)) {
-            this.waitForElementAndClick(
-                    OPTIONS_REMOVE_FROM_MY_LIST_BUTTON,
-                    "Cannot click button to remove an article from saved",
-                    20
-            );
+            this.waitForElementPresent(OPTIONS_REMOVE_FROM_MY_LIST_BUTTON,"Cannot click button to remove an article from saved",20);
+            this.waitForElementAndClick(OPTIONS_REMOVE_FROM_MY_LIST_BUTTON,"Cannot click button to remove an article from saved",20);
+
             this.waitForElementPresent(
                     OPTIONS_ADD_TO_MY_LIST_BUTTON,
                     "Cannot find button to add an article to saved list after removing it from saved list before",
@@ -202,17 +197,8 @@ abstract public class ArticlePageObject extends MainPageObject {
     public void closeArticle()
     {
         if (Platform.getInstance().isIOS() || Platform.getInstance().isAndroid()) {
-            this.waitForElementPresent(
-                    CLOSE_ARTICLE_BUTTON,
-                    "Cannot find X button",
-                    20
-            );
-
-            this.waitForElementAndClick(
-                    CLOSE_ARTICLE_BUTTON,
-                    "Cannot close article, cannot click X button",
-                    20
-            );
+            this.waitForElementPresent(CLOSE_ARTICLE_BUTTON,"Cannot find X button",20);
+            this.waitForElementAndClick(CLOSE_ARTICLE_BUTTON,"Cannot close article, cannot click X button",20);
         } else {
             System.out.println("Method closeArticle() does nothing for platform " + Platform.getInstance().getPlatformVar());
         }

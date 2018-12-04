@@ -44,7 +44,7 @@ public class MyListsTests extends CoreTestCase
             Auth.enterLoginData(login, password);
             Auth.submitForm();
 
-            ArticlePageObject.waitForTitleElement();
+            ArticlePageObject.assertTitlePresent();
 
             assertEquals("We are not on the same page after login.",
                     article_title,

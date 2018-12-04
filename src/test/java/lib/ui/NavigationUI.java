@@ -3,6 +3,8 @@ package lib.ui;
 import lib.Platform;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
+import java.util.concurrent.TimeUnit;
+
 abstract public class NavigationUI extends MainPageObject {
 
     protected static String
@@ -17,6 +19,7 @@ abstract public class NavigationUI extends MainPageObject {
     public void OpenNavigation()
     {
         if (Platform.getInstance().isMW()) {
+            this.waitForElementPresent(OPEN_NAVIGATION, "Cannot find open navigation button", 20);
             this.waitForElementAndClick(OPEN_NAVIGATION, "Cannot find and click open navigation button", 20);
         } else {
             System.out.println("Method OpenNavigation() does nothing for platform " + Platform.getInstance().getPlatformVar());
@@ -26,16 +29,16 @@ abstract public class NavigationUI extends MainPageObject {
     public void clickMyLists()
     {
         if (Platform.getInstance().isMW()) {
-            this.tryClickElementWithFewAttempts(MY_LISTS_LINK, "Cannot find navigation button to 'My lists'", 15);
+            this.tryClickElementWithFewAttempts(
+                    MY_LISTS_LINK,
+                    "Cannot find navigation button to 'My lists'",
+                    15);
+        } else {
+            this.waitForElementAndClick(
+                    MY_LISTS_LINK,
+                    "Cannot find navigation button to 'My lists'",
+                    5
+            );
         }
-
-        System.out.println("\nHELLO, ALENA!\n");
-
-//        this.waitForElementAndClick(
-//                MY_LISTS_LINK,
-//                "Cannot find navigation button to 'My lists'",
-//                5
-//        );
-
     }
 }

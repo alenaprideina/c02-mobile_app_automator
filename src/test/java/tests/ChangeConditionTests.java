@@ -13,9 +13,8 @@ public class ChangeConditionTests extends CoreTestCase {
     @Test
     public void testChangeScreenOrientationOnSearchResults()
     {
-        if (Platform.getInstance().isMW()) {
-            return;
-        }
+        if (Platform.getInstance().isMW()) { return; }
+
         this.skipWelcomePageForIOSApp();
 
         String request = "Singleton pattern";
@@ -53,9 +52,8 @@ public class ChangeConditionTests extends CoreTestCase {
     @Test
     public void testCheckSearchArticleInBackground()
     {
-        if (Platform.getInstance().isMW()) {
-            return;
-        }
+        if (Platform.getInstance().isMW()) { return; }
+
         this.skipWelcomePageForIOSApp();
 
         String request = "Singleton pattern";

@@ -35,20 +35,17 @@ public class MainPageObject
         );
     }
 
-    public WebElement waitForElementPresent(String locator, String error_message)
-    {
+    public WebElement waitForElementPresent(String locator, String error_message) {
         return waitForElementPresent(locator, error_message, 5);
     }
 
-    public WebElement waitForElementAndClick(String locator, String error_message, long timeoutInSeconds)
-    {
+    public WebElement waitForElementAndClick(String locator, String error_message, long timeoutInSeconds) {
         WebElement element = waitForElementPresent(locator, error_message, timeoutInSeconds);
         element.click();
         return element;
     }
 
-    public WebElement waitForElementAndSendKeys(String locator, String value, String error_message, long timeoutInSeconds)
-    {
+    public WebElement waitForElementAndSendKeys(String locator, String value, String error_message, long timeoutInSeconds) {
         WebElement element = waitForElementPresent(locator, error_message, timeoutInSeconds);
         element.sendKeys(value);
         return element;
@@ -65,8 +62,7 @@ public class MainPageObject
         );
     }
 
-    public WebElement waitForElementAndClear(String locator, String error_message, long timeoutInSeconds)
-    {
+    public WebElement waitForElementAndClear(String locator, String error_message, long timeoutInSeconds) {
         WebElement element = waitForElementPresent(locator, error_message, timeoutInSeconds);
         element.clear();
         return element;
@@ -124,7 +120,6 @@ public class MainPageObject
             if (already_swiped > max_swipes) {
                 Assert.assertTrue(error_message, element.isDisplayed());
             }
-
         }
     }
 
@@ -226,12 +221,9 @@ public class MainPageObject
         }
     }
 
-    public int getAmountOfElements(String locator)
-    {
+    public int getAmountOfElements(String locator) {
         By by = this.getLocatorByString(locator);
-
         List elements = driver.findElements(by);
-
         return elements.size();
     }
 
@@ -246,19 +238,18 @@ public class MainPageObject
         boolean need_more_attempts = true;
 
         while (need_more_attempts) {
-            System.out.println("current_attempts = " + current_attempts + "\n");
             try {
-                this.waitForElementAndClick(locator, error_message + "123", 20);
+                this.waitForElementPresent(locator, error_message + "\tTRY\n", 20);
+                this.waitForElementAndClick(locator, error_message + "\tTRY\n", 20);
+
                 need_more_attempts = false;
             } catch (Exception e) {
                 if (current_attempts > amount_of_attempts) {
-                    this.waitForElementAndClick(locator, error_message + "456", 20);
+                    this.waitForElementPresent(locator, error_message + "\tCATCH\n", 20);
+                    this.waitForElementAndClick(locator, error_message + "\tCATCH\n", 20);
                 }
-
-                System.out.println("\nMY Exception\n");
             }
-
-            ++current_attempts;
+            ++ current_attempts;
         }
     }
 

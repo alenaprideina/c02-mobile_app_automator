@@ -80,11 +80,7 @@ abstract public class MyListsPageObject extends MainPageObject {
         } else {
             String remove_locator = getRemoveButtonByTitle(article_title);
 
-            this.waitForElementPresent(
-                    remove_locator,
-                    "Cannot find button to remove an article from saved",
-                    20
-            );
+            this.waitForElementPresent(remove_locator,"Cannot find button to remove an article from saved",20);
             this.waitForElementAndClick(
                     remove_locator,
                     "Cannot click button to remove an article from saved",
@@ -97,6 +93,8 @@ abstract public class MyListsPageObject extends MainPageObject {
         }
 
         if (Platform.getInstance().isMW()) {
+            driver.navigate().refresh();
+            driver.navigate().refresh();
             driver.navigate().refresh();
         }
 
