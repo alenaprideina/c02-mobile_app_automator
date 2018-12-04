@@ -33,16 +33,11 @@ abstract public class ArticlePageObject extends MainPageObject {
     }
     /* TEMPLATE METHODS */
 
-    public WebElement waitForTitleElement()
-    {
-        return this.waitForElementPresent(
-                TITLE,
-                "Cannot find article title on page",
-                15);
+    public WebElement waitForTitleElement() {
+        return this.waitForElementPresent(TITLE,"Cannot find article title on page",15);
     }
 
-    public String getArticleTitle()
-    {
+    public String getArticleTitle() {
         WebElement title_element = waitForTitleElement();
         if (Platform.getInstance().isAndroid()) {
             return title_element.getAttribute("text");
@@ -53,13 +48,8 @@ abstract public class ArticlePageObject extends MainPageObject {
         }
     }
 
-    public void assertTitlePresent()
-    {
-        this.waitForElementPresent(
-                TITLE,
-                "Cannot find title of Article",
-                20
-        );
+    public void assertTitlePresent() {
+        this.waitForElementPresent(TITLE,"Cannot find title of Article",20);
     }
 
     public void swipeToFooter()
@@ -75,54 +65,28 @@ abstract public class ArticlePageObject extends MainPageObject {
 
     public void waitForOpenOptions()
     {
-        this.waitForElementPresent(OPTIONS_LIST, "Cannot find Options for Article");
+        if (Platform.getInstance().isAndroid()) {
+            this.waitForElementPresent(OPTIONS_LIST, "Cannot find Options for Article");
+        } else {
+            System.out.println("Method waitForOpenOptions() does nothing for platform " + Platform.getInstance().getPlatformVar());
+        }
     }
 
     public void addArticleToMyList(String name_of_folder)
     {
-        this.waitForElementPresent(
-                OPTIONS_BUTTON,
-                "Cannot find button to open article options",
-                30
-        );
-
-        this.waitForElementAndClick(
-                OPTIONS_BUTTON,
-                "Cannot click button to open article options",
-                30
-        );
-
+        this.waitForElementPresent(OPTIONS_BUTTON,"Cannot find button to open article options",30);
+        this.waitForElementAndClick(OPTIONS_BUTTON,"Cannot click button to open article options",30);
         this.waitForOpenOptions();
-        this.waitForElementAndClick(
-                OPTIONS_ADD_TO_MY_LIST_BUTTON,
-                "Cannot find option to add article to reading list",
-                30
-        );
 
-        this.waitForElementAndClick(
-                ADD_TO_MY_LIST_OVERLAY,
-                "Cannot find 'Got it' tip overlay",
-                30
-        );
+        this.waitForElementPresent(OPTIONS_ADD_TO_MY_LIST_BUTTON,"Cannot find option to add article to reading list",30);
+        this.waitForElementAndClick(OPTIONS_ADD_TO_MY_LIST_BUTTON,"Cannot find and click option to add article to reading list",30);
 
-        this.waitForElementAndClear(
-                MY_LIST_NAME_INPUT,
-                "Cannot find input to set name of article folder",
-                30
-        );
+        this.waitForElementPresent(ADD_TO_MY_LIST_OVERLAY,"Cannot find 'Got it' tip overlay",30);
+        this.waitForElementAndClick(ADD_TO_MY_LIST_OVERLAY,"Cannot find and click'Got it' tip overlay",30);
 
-        this.waitForElementAndSendKeys(
-                MY_LIST_NAME_INPUT,
-                name_of_folder,
-                "Cannot put text into article folder input",
-                30
-        );
-
-        this.waitForElementAndClick(
-                MY_LIST_OK_BUTTON,
-                "Cannot press OK button",
-                30
-        );
+        this.waitForElementAndClear(MY_LIST_NAME_INPUT,"Cannot find input to set name of article folder",30);
+        this.waitForElementAndSendKeys(MY_LIST_NAME_INPUT, name_of_folder,"Cannot put text into article folder input",30);
+        this.waitForElementAndClick(MY_LIST_OK_BUTTON,"Cannot press OK button",30);
     }
 
     public void addArticleToMyExistList(String name_of_folder)
@@ -184,11 +148,7 @@ abstract public class ArticlePageObject extends MainPageObject {
     public void closeTipForSaved()
     {
         if (Platform.getInstance().isIOS()) {
-            this.waitForElementAndClick(
-                    TIP_FOR_SAVED,
-                    "Cannot find tip add article to reading list",
-                    20
-            );
+            this.waitForElementAndClick(TIP_FOR_SAVED,"Cannot find tip add article to reading list",20);
         } else {
             System.out.println("Method closeTipForSaved() does nothing for platform " + Platform.getInstance().getPlatformVar());
         }

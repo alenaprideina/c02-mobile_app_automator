@@ -20,7 +20,7 @@ public class SearchTests extends CoreTestCase {
         SearchPageObject.waitForSearchResult("bject-oriented programming language");
     }
 
-    // для iOS порефакторить
+    // для iOS и mobile web порефакторить
     @Test
     public void testPlaceholderInSearchInput()
     {
@@ -107,7 +107,7 @@ public class SearchTests extends CoreTestCase {
         SearchPageObject.assertThereIsNoResultOfSearch();
     }
 
-    // для iOS порефакторить
+    // для iOS и mobile web порефакторить
     @Test
     public void testSearchResultMatch()
     {

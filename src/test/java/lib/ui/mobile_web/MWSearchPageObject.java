@@ -14,8 +14,6 @@ public class MWSearchPageObject extends SearchPageObject
         SEARCH_RESULT_BY_TWO_SUBSTRING_TPL = "xpath://XCUIElementTypeLink[contains(@name,'{TITLE}')][contains(@name, '{DESC}')]";
 
         SEARCH_RESULT_ELEMENT = "css:ul.page-list>li.page-summary";
-
-//        SEARCH_ITEM_TITLE = "id:org.wikipedia:id/page_list_item_title";
         SEARCH_EMPTY_RESULT_ELEMENT = "css:p.without-results";
     }
 

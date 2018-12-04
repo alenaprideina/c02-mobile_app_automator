@@ -87,6 +87,17 @@ public class MyListsTests extends CoreTestCase
             ArticlePageObject.addArticleToMySaved();
             ArticlePageObject.closeTipForSaved();
         }
+
+        if (Platform.getInstance().isMW()) {
+            AuthorizationPageObject Auth = new AuthorizationPageObject(driver);
+            Auth.clickAuthButton();
+            Auth.enterLoginData(login, password);
+            Auth.submitForm();
+
+            ArticlePageObject.assertTitlePresent();
+            ArticlePageObject.addArticleToMySaved();
+        }
+
         ArticlePageObject.closeArticle();
 
         SearchPageObject.initSearchInput();
@@ -101,11 +112,14 @@ public class MyListsTests extends CoreTestCase
         if (Platform.getInstance().isAndroid()) {
             ArticlePageObject.addArticleToMyExistList(name_of_folder);
         } else {
+            ArticlePageObject.assertTitlePresent();
             ArticlePageObject.addArticleToMySaved();
         }
+
         ArticlePageObject.closeArticle();
 
         NavigationUI NavigationUI = NavigationUIFactory.get(driver);
+        NavigationUI.OpenNavigation();
         NavigationUI.clickMyLists();
 
         MyListsPageObject MyListsPageObject = MyListsPageObjectFactory.get(driver);

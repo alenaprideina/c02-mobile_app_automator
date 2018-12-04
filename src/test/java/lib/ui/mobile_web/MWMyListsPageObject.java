@@ -6,8 +6,8 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 public class MWMyListsPageObject extends MyListsPageObject
 {
     static {
-        ARTICLE_BY_TITLE_TPL = "xpath://ul[contains(@class, 'watchlist')]//h3[contains(text(), '{TITLE}')]";
-        ARTICLE_ELEMENT = "css:ul.watchlist>li.page-summary.with-watchstar";
+        ARTICLE_BY_TITLE_TPL = "xpath://ul[contains(@class,'watchlist')]//h3[contains(text(),'{TITLE}')]";
+        ARTICLE_ELEMENT = "xpath://ul[contains(@class,'watchlist')]//li[contains(@class,'with-watchstar')]";
         REMOVE_FROM_SAVED_BUTTON = "xpath://ul[contains(@class,'watchlist')]//h3[contains(text(),'{TITLE}')]/../../div[contains(@class,'watched')]";
     }
 

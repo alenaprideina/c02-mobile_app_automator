@@ -121,15 +121,18 @@ abstract public class MyListsPageObject extends MainPageObject {
         By by = this.getLocatorByString(ARTICLE_ELEMENT);
         List<WebElement> page_list_item_container = driver.findElements(by);
 
-        String title_element;
+        String title_element = "";
         for (WebElement el: page_list_item_container) {
 
             if (Platform.getInstance().isAndroid()) {
                 By by_el = this.getLocatorByString(ARTICLE_ITEM_TITLE);
                 title_element = el.findElement(by_el).getAttribute("text");
-            } else {
+            } else if (Platform.getInstance().isIOS()){
                 By by_el = this.getLocatorByString(ARTICLE_ELEMENT);
                 title_element = el.findElement(by_el).getAttribute("name");
+            } else {
+                By by_el = this.getLocatorByString(ARTICLE_ELEMENT);
+                title_element = el.findElement(by_el).getAttribute("title");;
             }
 
             if (title_element.toLowerCase().contains(substring.toLowerCase())) {
