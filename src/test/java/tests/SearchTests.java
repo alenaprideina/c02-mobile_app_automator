@@ -121,7 +121,6 @@ public class SearchTests extends CoreTestCase {
         SearchPageObject.assertResultTitlesContainsRequest(request);
     }
 
-    // Ex12*: Рефакторинг тестов
     @Test
     public void testSearchResultMatchTitleAndDesc()
     {
@@ -132,8 +131,8 @@ public class SearchTests extends CoreTestCase {
         SearchPageObject.initSearchInput();
         String request = "Novosibirsk";
         SearchPageObject.typeSearchLine(request);
-        SearchPageObject.waitForElementByTitleAndDescription("Novosibirsk", "Russian city, the administrative center of Siberian Federal District");
-        SearchPageObject.waitForElementByTitleAndDescription("Novosibirsk Oblast", "Federal subject of Russia");
-        SearchPageObject.waitForElementByTitleAndDescription("Novosibirsk State University", "University");
+        SearchPageObject.waitForElementByTitleAndDescription("Novosibirsk", "Russia");
+        SearchPageObject.waitForElementByTitleAndDescription("Oblast", "Russia");
+        SearchPageObject.waitForElementByTitleAndDescription("State University", "niversity");
     }
 }
